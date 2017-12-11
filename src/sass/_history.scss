@@ -1,0 +1,232 @@
+.container-anchor{
+  margin-bottom: 40px;
+  ul{
+    font-size: 0;
+  }
+  li.active-anchor{
+    &:hover{
+      a{
+        color: white;
+        border-bottom: none;
+      }
+    }
+    a{
+      color: white;
+      border: 1px solid #0a3c90;
+      border-radius: 3px;
+      background-color: #0a3c90;
+    }
+  }
+  li{
+    @include display-inline-middle;
+    margin-right: 9px;
+    transition: all 0.3s ease-out;
+    margin-bottom: 13px;
+    padding-left: 0 !important;
+    &:before{
+      display: none !important;
+    }
+    &:hover{
+      a{
+        color: #141e2d;
+      }
+    }
+    a{
+      @include font-sans-600;
+      font-size: 15px;
+      border: 1px solid #0a3c90 !important;
+      background-color: #fff;
+      color: #0a3c90;
+      border-radius: 3px;
+      display: inline-block;
+      transition: all 0.3s ease-out;
+      padding: 7px 11px;
+
+    }
+  }
+}
+
+.wrapper-date-content{
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid #c7d2e2;
+  //padding-bottom: 20px;
+  margin-top: 45px;
+}
+
+.wrapper-date-content:last-child{
+  border-bottom: none;
+}
+
+.wrapper-date-content:first-child{
+  margin-top: 0;
+}
+
+.wrapper-date-content_date-text:first-child{
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.wrapper-date-content_date-text{
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+
+.wrapper-date-content_left-img-text{
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.wrapper-date-content_left-img{
+  width: 43%;
+  position: relative;
+  float: left;
+  img{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  p.bold-img{
+    @include font-sans-300;
+    font-size: 18px;
+    color: #404854;
+    margin-bottom: 10px;
+  }
+  p{
+    @include font-sans-400;
+    font-size: 15px;
+    color: #bababa;
+    line-height: 1.6;
+  }
+}
+
+.wrapper-date-content_text-47{
+  padding-left: 47%;
+  margin-bottom: 40px;
+  .wrapper_row-title {
+    margin-bottom: 0;
+  }
+  p.date-txt{
+    @include font-sans-300;
+    font-size: 16px;
+    color: #0a3c90;
+    margin-bottom: 15px;
+  }
+  p{
+    @include font-sans-400;
+    font-size: 15px;
+    color: #404854;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+}
+
+.wrapper-date-content_date{
+  float: left;
+  width: 20%;
+  text-align: left;
+  .wrapper-date-content_date-year{
+    font-family: 'Gilroy';
+    font-size: 60px;
+    color: #0a3c90;
+    font-weight: 800;
+  }
+  .wrapper-date-content_date-month{
+    @include font-sans-300;
+    font-size: 16px;
+    color: #0a3c90;
+  }
+}
+.wrapper-date-content_text-23{
+  padding-left: 23%;
+  h5{
+    margin-bottom: 0;
+  }
+  .wrapper_row-title{
+    @include font-sans-300;
+    font-size: 22px;
+    margin-bottom: 0;
+    color: #141e2d;
+    line-height: 1.5;
+  }
+  p.date-txt{
+    @include font-sans-300;
+    font-size: 16px;
+    color: #0a3c90;
+    margin-bottom: 15px;
+  }
+  p{
+    @include font-sans-400;
+    font-size: 15px;
+    color: #404854;
+    line-height: 1.75;
+    margin-bottom: 20px;
+  }
+}
+
+.img-100{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.container-anchor-slider{
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  margin-top: -100%;
+  transition: all 0.8s ease-in-out;
+  .wrapper-anchor-slider{
+    width: 100%;
+    height: 80px;
+    background: white;
+    box-shadow: 0px 5px 18px 0px rgba(10, 60, 144, 0.2);
+  }
+  .swiper-anchor-slider{
+    width: 90%;
+    margin: 0 auto;
+    .slick-track{
+      width: 100%;
+    }
+    .slick-next{
+      right: -55px;
+      background: url(../img/pagination/p_normal.svg);
+      width: 36px;
+      height: 36px;
+      background-size: 36px 36px;
+      box-shadow: 0px 2px 7px -2px rgba(0, 0, 0, 0.75);
+      border-radius: 50%;
+      &:before{
+        content: '';
+      }
+    }
+    .slick-prev{
+      left: -55px;
+      background: url(../img/pagination/p_normal.svg);
+      width: 36px;
+      height: 36px;
+      background-size: 36px 36px;
+      box-shadow: 0px -2px 7px -2px rgba(0, 0, 0, 0.75);
+      border-radius: 50%;
+      transform: rotate(180deg);
+      top: 30%;
+      z-index: 1;
+      &:before{
+        content: '';
+      }
+    }
+  }
+  .box-anchor-year-touch{
+    text-align: center;
+    @include font-sans-600;
+    font-size: 26px;
+    color: #0a3c90;
+    padding: 22px;
+  }
+  .slick-slide{
+    opacity: 0;
+  }
+  .slick-slide.slick-active{
+    transition: opacity 0.5s;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+}

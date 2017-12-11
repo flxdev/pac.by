@@ -1,0 +1,495 @@
+*, *:after, *:before
+	box-sizing: border-box
+a
+	text-decoration: none
+img
+	display: block
+button
+	background-color: transparent
+	outline: none
+svg
+	width: 100%
+	height: 100%
+body
+    width: 100%
+    height: 100%
+    overflow-x: hidden
+    -webkit-font-smoothing: antialiased
+
+$large: 1px
+
+
+=font-sans-300
+    font-family: 'Open Sans', sans-serif
+    font-weight: 300
+
+=font-sans-400
+    font-family: 'Open Sans', sans-serif
+    font-weight: 400
+
+=font-sans-500
+    font-family: 'Open Sans', sans-serif
+    font-weight: 500
+
+=font-sans-700
+    font-family: 'Open Sans', sans-serif
+    font-weight: 700
+
+=font-sans-800
+    font-family: 'Open Sans', sans-serif
+    font-weight: 800
+
+=font-sans-600
+    font-family: 'Open Sans', sans-serif
+    font-weight: 600
+
+h1
+    font-family: 'Gilroy'
+    font-size: 58px
+    text-transform: uppercase
+    font-weight: 800
+
+h2
+    font-family: 'Gilroy'
+    font-size: 46px
+    text-transform: uppercase
+    font-weight: 800
+
+h3
+    @include font-sans-800
+    font-size: 36px
+    text-transform: uppercase
+
+.three-title
+    @include font-sans-800
+    font-size: 36px
+    text-transform: uppercase
+
+h4
+    @include font-sans-400
+    font-size: 22px
+
+h5
+    @include font-sans-300
+    font-size: 22px
+    line-height: 1.5
+    color: #141e2d
+
+.container-title
+    .three-title
+        margin-bottom: 35px
+    .h3
+        font-weight: 800
+        font-family: 'Gilroy'
+        font-size: 36px
+        color: #404854
+
+=display-inline-middle
+	display: inline-block
+	vertical-align: middle
+
+=display-inline-top
+	display: inline-block
+	vertical-align: top
+
+=hover-time
+    transition: color .5s
+
+=hover-time-all
+    transition: all 0.5s ease-out
+
+
+p
+    @include font-sans-300
+    font-size: 17px
+    color: #404854
+    line-height: 1.9
+
+.block-video
+    position: absolute
+    width: 100%
+    height: 100%
+
+.block-video .sticky > video
+    width: 100%
+    background: black
+=hover-color
+	color: #fbe635
+.fancybox-slide--current .w-p
+    transform: translateY(0)
+.w-p
+    width: 660px
+    border-bottom: 10px solid #c7d2e2
+    border-width: 10px !important
+    transform: translateY(-50px)
+    transition: all .33s
+    .fancybox-close-small
+        top: 15px
+        right: 15px
+        width: 44px
+        height: 55px
+        padding: 0
+        margin: 0
+        border: 0
+        border-radius: 0
+        outline: none
+        background: transparent
+        z-index: 10
+        cursor: pointer
+    .fancybox-close-small:after
+        font: 40px/51px Arial,"Helvetica Neue",Helvetica,sans-serif
+        width: 47px
+        height: 47px
+        color: black
+
+.w-p
+    .fancybox-close-small:after
+        box-shadow: none !important
+        outline: none !important
+    .fancybox-close-small:focus:after
+        box-shadow: none !important
+        outline: none !important
+    .fancybox-close-small:hover:after
+        box-shadow: none !important
+.wrapper-popup
+    padding: 68px 110px 70px 110px
+    .three-title-popup
+        text-align: center
+        margin-bottom: 25px
+        font-family: 'Gilroy'
+        font-size: 36px
+        text-transform: uppercase
+        font-weight: 800
+    p
+        text-align: center
+        color: #141e2d
+        @include font-sans-300
+        margin-bottom: 30px
+        line-height: 1.4
+
+.block-label-input
+    margin-bottom: 25px
+    .block-label
+        @include font-sans-300
+        font-size: 15px
+        margin-bottom: 10px
+        label
+            span
+                color: #0a3c90
+    .block-input
+        .wrapper-teaching-staff_select
+            width: 100%
+            .wrapper-teaching-staff_select-select
+                width: 100%
+                float: none
+                .select2-container--default
+                    .select2-selection--single
+                        height: 42px
+                        padding-top: 5px
+                        .select2-selection__rendered
+                            @include font-sans-300
+                            font-size: 15px
+                            color: #141e2d
+        .has-error
+            .select2-selection--single
+                border-color: #cf535a!important
+
+        input
+            border: 1px solid #b3bcca
+            border-radius: 4px
+            @include font-sans-300
+            font-size: 15px
+            color: #141e2d
+            padding: 10px 15px
+            width: 100%
+            transition: all 0.3s ease-out
+            &:hover
+                border: 1px solid #0a3c90
+            &:focus
+                border: 1px solid #0a3c90
+        textarea
+            border: 1px solid #b3bcca
+            border-radius: 4px
+            @include font-sans-300
+            font-size: 15px
+            color: #141e2d
+            padding: 10px 15px
+            width: 100%
+            resize: none
+            height: 100px
+            &:focus
+                border: 1px solid #91a7cd
+.block-btn-form
+    .btn-form
+        display: block
+        text-transform: uppercase
+        color: white
+        background-color: #0a3c90
+        margin: 0 auto
+        border-radius: 4px
+        @include font-sans-700
+        font-size: 13px
+        padding: 15px 75px
+        transition: all .3s ease-in-out
+        box-shadow: 0px 5px 18px 0px rgba(10, 60, 144, 0.2)
+        &:hover
+            background-color: #0a306e
+            box-shadow: 0px 3px 12px 0px rgba(10, 60, 144, 0.22)
+        &:active
+            background: #0a3c90
+            box-shadow: 0px 1px 5px 0px rgba(10, 60, 144, 0.35)
+.block-pass-reg
+    font-size: 0px
+    margin-bottom: 30px
+    .block-forgot-password
+        @include display-inline-top
+        width: 50%
+        a
+            @include font-sans-300
+            font-size: 15px
+            color: #0a3c90
+    .block-registration
+        @include display-inline-top
+        width: 50%
+        text-align: right
+        .icon
+            @include font-sans-300
+            font-size: 15px
+            color: #0a3c90
+            svg
+                width: 12px
+                height: 14px
+                .st0
+                    fill: #0a3c90
+        .txt
+            @include font-sans-300
+            font-size: 15px
+            color: #0a3c90
+            padding-left: 10px
+.block-label-input-res
+    font-size: 0
+    .block-label-input-s
+        @include display-inline-middle
+        width: 20%
+        margin-bottom: 25px
+        .block-label
+            @include font-sans-300
+            font-size: 15px
+            margin-bottom: 10px
+            label
+                span
+                    color: #0a3c90
+        .block-input
+            input
+                border: 1px solid #b3bcca
+                border-radius: 4px
+                @include font-sans-300
+                font-size: 15px
+                color: #141e2d
+                padding: 10px 15px
+                width: 100%
+                &:focus
+                    border: 1px solid #91a7cd
+            textarea
+                border: 1px solid #b3bcca
+                border-radius: 4px
+                @include font-sans-300
+                font-size: 15px
+                color: #141e2d
+                padding: 10px 15px
+                width: 100%
+                resize: none
+                height: 100px
+                &:focus
+                    border: 1px solid #91a7cd
+    .block-label-input-b
+        @include display-inline-middle
+        width: 75%
+        margin-bottom: 25px
+        float: right
+        .block-label
+            @include font-sans-300
+            font-size: 15px
+            margin-bottom: 10px
+            label
+                span
+                    color: #0a3c90
+        .block-input
+            input
+                border: 1px solid #b3bcca
+                border-radius: 4px
+                @include font-sans-300
+                font-size: 15px
+                color: #141e2d
+                padding: 10px 15px
+                width: 100%
+                &:focus
+                    border: 1px solid #91a7cd
+            textarea
+                border: 1px solid #b3bcca
+                border-radius: 4px
+                @include font-sans-300
+                font-size: 15px
+                color: #141e2d
+                padding: 10px 15px
+                width: 100%
+                resize: none
+                height: 100px
+                &:focus
+                    border: 1px solid #91a7cd
+#hidden-content-r-p
+    .wrapper-popup
+        padding: 68px 50px 70px 50px
+    .wrapper-form
+        padding: 0 70px
+.btn-close-c
+    text-align: center
+    span
+        display: block
+        cursor: pointer
+        width: 100px
+        margin: 0 auto
+        font-size: 15px
+        @include font-sans-500
+        color: #0a3c90
+.block-wrapper-content.width-b
+    width: 1280px
+.hidden-lg, .block-mobile-news, .block-header-logo-mobile, .block-mobile-nav, .block-modile-menu
+    display: none
+.block-wrapper-sticky-mobile
+    position: absolute
+    width: 400px
+    top: 33vh
+    z-index: 7
+    right: 35px
+    .swiper-wrapper
+        display: block
+    .swiper-slide-news
+        width: 100%
+        border-radius: 5px
+        height: 265px
+        background-size: cover
+        display: block
+        position: relative
+        margin-bottom: 20px
+        overflow: hidden
+        transition: background 3s ease
+        &:before
+            content: ""
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            border-radius: 5px
+            z-index: 3
+            transition: all .5s ease-out
+            opacity: .3
+            background-color: #000
+        &:hover:before
+            opacity: .55
+
+        .wrapper-sticky-content-news_text
+            width: 100%
+            height: 100%
+            padding: 16px 17px
+            position: relative
+            z-index: 3
+            .wrapper-sticky-content-news_section
+                @include font-sans-300
+                color: #fff
+                font-size: 16px
+                position: relative
+            .wrapper-sticky-content-news_txt
+                position: absolute
+                left: 0
+                bottom: 40px
+                padding: 0 17px
+                @include font-sans-500
+                font-size: 15px
+                color: #fff
+                transition: color .5s
+                line-height: 1.6
+            .wrapper-sticky-content-news_date
+                position: absolute
+                left: 0
+                bottom: 16px
+                padding: 0 17px
+                @include font-sans-300
+                font-size: 15px
+                color: #c8c8c8
+
+.grey-white
+    background: #f8f8f8
+
+.select2-dropdown
+    z-index: 99994
+
+.black-txt
+    color: #141e2d
+
+.map-site-search-filter_radio.black-txt
+    label
+        color: #141e2d
+.content-row-wrapper_text.box-slider
+    overflow: visible
+    .content-row-wrapper_text-slider
+        overflow: visible
+        .swiper-slide
+            position: relative
+            .swiper-slide_img
+                width: 100%
+                img
+                    margin-bottom: 15px
+            .swiper-slide_img + .swiper-slide_title
+                @include font-sans-300
+                font-size: 15px
+                color: #bababa
+                position: relative
+                margin-top: 0
+        .swiper-slide.swiper-slide-active:before
+            content: ''
+            background-color: inherit
+        .swiper-slide.swiper-slide-next:before
+            content: ''
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            background-color: white
+            opacity: .7
+.footer.fadeOutFooter
+    opacity: 0
+
+[id^="bx_incl_area"]
+    display: inline !important
+
+.ya-share2__item_service_vkontakte
+    .ya-share2__badge
+        background-color: inherit!important
+    .ya-share2__icon
+        width: 47px !important
+        background: url(../img/vk-icon.png) !important
+        background-size: contain !important
+        background-repeat: no-repeat !important
+
+.ya-share2__item_service_gplus
+    .ya-share2__badge
+        background-color: inherit!important
+    .ya-share2__icon
+        background-image: url(../img/google-icon.png)!important
+        background-size: contain!important
+        background-repeat: no-repeat!important
+        width: 78px !important
+
+.ya-share2__item_service_facebook
+    .ya-share2__badge
+        background-color: inherit!important
+    .ya-share2__icon
+        background-image: url(../img/face-icon.png)!important
+        background-size: contain!important
+        background-repeat: no-repeat!important
+        width: 87px !important
+
+.block-ie
+    display: none
