@@ -1,0 +1,235 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img-b(style="background-image:url('img/bg-header/bg-news.png')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title ОБУЧАЮЩИЙ СЕМИНАР «ВВЕДЕНИЕ В МЕТОДОЛОГИЮ ГОСУДАРСТВЕННО-ЧАСТНОГО ПАРТНЕРСТВА» СОСТОЯЛСЯ В ИНСТИТУТЕ ГОСУДАРСТВЕННОЙ СЛУЖБЫ
+                        .bread-crumbs
+                            a(href='#') Главная
+                            a(href='#') Пресс-центр
+                            span Новости
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .sticky-print
+                                .wrapper_row-social-print.hidden-xs
+                                    .wrapper_row-data 28 апреля 2017
+                                    .wrapper_row-print
+
+                                        .wrapper_row-social
+                                            a.link-social(href='#' style="background-image:url('img/vk-icon.png')")
+                                            a.link-social(href='#' style="background-image:url('img/google-icon.png')")
+                                            a.link-social(href='#' style="background-image:url('img/face-icon.png')")
+
+                                        a(href='#').btn-print
+                                            span.icon-print
+                                                <svg width="20" height="20.5" xmlns="http://www.w3.org/2000/svg">
+                                                <style type="text/css">.st0{fill:#999999;}</style>
+                                                <g>
+                                                <g id="svg_1">
+                                                <path id="svg_2" d="m18,5.5l-1.5,0l0,-5.5l-13,0l0,5.5l-1.5,0c-1.1,0 -2,0.9 -2,2l0,7.2c0,1.1 0.9,2 2,2l1.5,0l0,4l13,0l0,-0.7l0,-3.5l1.5,0c1.1,0 2,-0.9 2,-2l0,-7.1c0,-1.1 -0.9,-1.9 -2,-1.9zm-13.5,-4.5l11,0l0,4.5l-11,0l0,-4.5zm0,18.5l0,-6.9l11,0l0,6.9l-11,0zm14.5,-4.9c0,0.5 -0.4,1 -1,1l-1.5,0l0,-4l-13,0l0,4l-1.5,0c-0.5,0 -1,-0.4 -1,-1l0,-7.2c0,-0.5 0.4,-1 1,-1l1.5,0l13,0l1.5,0c0.5,0 1,0.4 1,1l0,7.2z" class="st0"/>
+                                                <circle id="svg_3" r="0.7" cy="8.7" cx="16.8" class="st0"/>
+                                                <rect id="svg_4" height="1" width="6.9" class="st0" y="15.6" x="5.6"/>
+                                                <rect id="svg_5" height="1" width="8.8" class="st0" y="13.6" x="5.6"/>
+                                                <rect id="svg_6" height="1" width="8.8" class="st0" y="17.6" x="5.6"/>
+                                                </g>
+                                                </g>
+                                                </svg>
+                                            span.txt Версия для печати
+                        .content-row-wrapper_row-txt
+                            .content-row-wrapper_text.box-slider
+                                .wrapper_row-title Семинары, посвященные государственно-частному партнерству, уже не в первый раз проходят в стенах Академии управления при Президенте Республики Беларусь. На этот раз он состоялся на примере подготовки пилотного проекта государственно-частного партнерства «Строительство детских дошкольных учреждений в регионах Минской области».
+                                img(src='img/news/news-txt-1.png' alt='').revealator-zoomin.revealator-once
+                                p.revealator-zoomin.revealator-once «Рада приветствовать вас сегодня на семинаре. Хотелось бы в начале поблагодарить Академию управления, которая поддержала нашу инициативу и Европейский союз за помощь в организации. Каждый из присутствующих, я думаю, согласится с тем, что в нашей стране актуальность государственно-частного партнерства обусловлена поиском альтернативных источников финансирования государственных проектов Беларуси, также был сформирован перечень пилотных проектов. Одним из примеров является проект по строительству трех детских садов, который был инициирован Минским областным исполнительным комитетом. К разработке технико-экономического обоснования этого проекта были привлечены эксперты, которые сегодня поделятся с вами своими знаниями и практическим опытом структурирования проектов в социальной сфере, в частности в образовании. Основная цель подготовки проектов заключается в проработке оптимальной структуры реализации проекта с точки зрения эффективного расходования бюджетных средств, а также поиска и привлечения инвестиций», – отметила директор Государственного учреждения «Национальное агентство инвестиций и приватизации» Наталья Никандрова.
+                                p.revealator-zoomin.revealator-once Также на семинаре она рассказала о том, что данный проект будет сопровождаться несколькими образовательными семинарами. Сегодня была вводная информация о государственно-частном партнерстве, где участникам рассказали о специфике структурирования подобных проектов в социальной сфере. Второй семинар пройдет в августе этого года, во время которого участников познакомят с основными результатами деятельности проекта, а завершится он маркетинговым мероприятием, которое будет направлено на информирование потенциальных инвесторов, заинтересованных в реализации данного проекта.
+                                //.wrapper-overlow
+                                //    .content-row-wrapper_text-slider.revealator-zoomin.revealator-once
+                                //        .swiper-wrapper
+                                //            .swiper-slide
+                                //                img(src='img/news/news-txt-2.png' alt='')
+                                //            .swiper-slide
+                                //                img(src='img/news/news-txt-1.png' alt='')
+                                //            .swiper-slide
+                                //                img(src='img/news/news-txt-2.png' alt='')
+                                //        .swiper-button-next
+                                //        .swiper-button-prev
+
+
+                                .wrapper-overlow
+                                    .content-row-wrapper_text-slider.revealator-zoomin.revealator-once
+                                        .swiper-wrapper
+                                            .swiper-slide
+                                                .swiper-slide_img
+                                                    img(src='img/about/slider-about.png' alt='')
+                                                .swiper-slide_title Главный корпус Академии управления на улице Московская 17.
+                                            .swiper-slide
+                                                .swiper-slide_img
+                                                    img(src='img/news/news-txt-1.png' alt='')
+                                            .swiper-slide
+                                                .swiper-slide_img
+                                                    img(src='img/news/news-txt-2.png' alt='')
+                                        .swiper-button-next
+                                        .swiper-button-prev
+                            .wrapper_row-social-print.visible-xs.hidden-lg.hidden-sm.social-print-m.d-none
+                                .wrapper_row-social
+                                    a.link-social(href='#' style="background-image:url('img/vk-icon.png')")
+                                        a.link-social(href='#' style="background-image:url('img/google-icon.png')")
+                                        a.link-social(href='#' style="background-image:url('img/face-icon.png')")
+                                .wrapper_row-print
+                                    a(href='#').btn-print
+                                        span.icon-print
+                                            <svg width="20" height="20.5" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#999999;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <path id="svg_2" d="m18,5.5l-1.5,0l0,-5.5l-13,0l0,5.5l-1.5,0c-1.1,0 -2,0.9 -2,2l0,7.2c0,1.1 0.9,2 2,2l1.5,0l0,4l13,0l0,-0.7l0,-3.5l1.5,0c1.1,0 2,-0.9 2,-2l0,-7.1c0,-1.1 -0.9,-1.9 -2,-1.9zm-13.5,-4.5l11,0l0,4.5l-11,0l0,-4.5zm0,18.5l0,-6.9l11,0l0,6.9l-11,0zm14.5,-4.9c0,0.5 -0.4,1 -1,1l-1.5,0l0,-4l-13,0l0,4l-1.5,0c-0.5,0 -1,-0.4 -1,-1l0,-7.2c0,-0.5 0.4,-1 1,-1l1.5,0l13,0l1.5,0c0.5,0 1,0.4 1,1l0,7.2z" class="st0"/>
+                                            <circle id="svg_3" r="0.7" cy="8.7" cx="16.8" class="st0"/>
+                                            <rect id="svg_4" height="1" width="6.9" class="st0" y="15.6" x="5.6"/>
+                                            <rect id="svg_5" height="1" width="8.8" class="st0" y="13.6" x="5.6"/>
+                                            <rect id="svg_6" height="1" width="8.8" class="st0" y="17.6" x="5.6"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.txt Версия для печати
+
+                            a(href='#').link-prev-txt Назад к ректорату
+            section.container-wrapper-content.grey
+                .block-wrapper-content
+                    .wrapper-read-also.revealator-zoomin.revealator-once
+                        .wrapper-read-also_title
+                            .title-two Читайте <br> также
+                        .wrapper-read-also_news-content
+                            .wrapper-read-also_news-block
+                                a(href='#').wrapper-read-also_news
+                                    .wrapper-read-also_news-img
+                                        img(src='img/news/news-s-1.png' alt='')
+                                    .wrapper-read-also_news-txt
+                                        .wrapper-read-also_news-txt_link Представители Академии управления примут участие в финале международной олимпиады в сфере информационных технологий «IT-Планета 2016/17»
+                                        .wrapper-read-also_news-txt_date 18 апреля 2017
+                                a(href='#').wrapper-read-also_news
+                                    .wrapper-read-also_news-img
+                                        img(src='img/news/news-s-2.png' alt='')
+                                    .wrapper-read-also_news-txt
+                                        .wrapper-read-also_news-txt_link Приглашаем стать студентом Академии управления на один день
+                                        .wrapper-read-also_news-txt_date 18 апреля 2017
+                                a(href='#').wrapper-read-also_news
+                                    .wrapper-read-also_news-img
+                                        img(src='img/news/news-s-4.png' alt='')
+                                    .wrapper-read-also_news-txt
+                                        .wrapper-read-also_news-txt_link Круглый стол на тему «Совершенствование работы по формированию резерва кадров»
+                                        .wrapper-read-also_news-txt_date 18 апреля 2017
+                                a(href='#').wrapper-read-also_news
+                                    .wrapper-read-also_news-img
+                                        img(src='img/news/news-s-3.png' alt='')
+                                    .wrapper-read-also_news-txt
+                                        .wrapper-read-also_news-txt_link Академия управления на «ТИБО-2017»
+                                        .wrapper-read-also_news-txt_date 18 апреля 2017
+                            a(href='#').link-news Все новости и события
+            section.container-wrapper-content
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

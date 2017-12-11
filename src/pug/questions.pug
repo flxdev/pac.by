@@ -1,0 +1,214 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg-news.png')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title вопрос ректору
+                        .bread-crumbs
+                            a(href='#') Главная
+                            span Вопрос ректору
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .wrapper_row-menu
+                                ul
+                                    li
+                                        a.active(href='#') Все
+                                    li
+                                        a(href='#') поступление
+                                    li
+                                        a(href='#') обучение
+                                    li
+                                        a(href='#') перевод студентов
+                                    li
+                                        a(href='#') общежитие
+                                    li
+                                        a(href='#') студенческая жизнь
+                                    li
+                                        a(href='#') трудоустройство
+                            .wrapper_row-form-pass_row.wrapper_row-menu-left
+                                a(href='javascript:;' data-fancybox data-src='#hidden-content-q').btn-blue задать вопрос
+                            .wrapper_row-social-print.hidden-xs.d-none
+                                .wrapper_row-social
+                                    a.link-social(href='#')
+                                        img(src='img/vk-icon.png' alt='')
+                                    a.link-social(href='#')
+                                        img(src='img/google-icon.png' alt='')
+                                    a.link-social(href='#')
+                                        img(src='img/face-icon.png' alt='')
+                                .wrapper_row-print
+                                    a(href='#').btn-print
+                                        span.icon-print
+                                            <svg width="20" height="20.5" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#999999;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <path id="svg_2" d="m18,5.5l-1.5,0l0,-5.5l-13,0l0,5.5l-1.5,0c-1.1,0 -2,0.9 -2,2l0,7.2c0,1.1 0.9,2 2,2l1.5,0l0,4l13,0l0,-0.7l0,-3.5l1.5,0c1.1,0 2,-0.9 2,-2l0,-7.1c0,-1.1 -0.9,-1.9 -2,-1.9zm-13.5,-4.5l11,0l0,4.5l-11,0l0,-4.5zm0,18.5l0,-6.9l11,0l0,6.9l-11,0zm14.5,-4.9c0,0.5 -0.4,1 -1,1l-1.5,0l0,-4l-13,0l0,4l-1.5,0c-0.5,0 -1,-0.4 -1,-1l0,-7.2c0,-0.5 0.4,-1 1,-1l1.5,0l13,0l1.5,0c0.5,0 1,0.4 1,1l0,7.2z" class="st0"/>
+                                            <circle id="svg_3" r="0.7" cy="8.7" cx="16.8" class="st0"/>
+                                            <rect id="svg_4" height="1" width="6.9" class="st0" y="15.6" x="5.6"/>
+                                            <rect id="svg_5" height="1" width="8.8" class="st0" y="13.6" x="5.6"/>
+                                            <rect id="svg_6" height="1" width="8.8" class="st0" y="17.6" x="5.6"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.txt Версия для печати
+                        .content-row-wrapper_row-txt
+                            .wrapper_row-txt
+                                .wrapper_row-txt_accordion-question
+                                    ul
+                                        li.js-drop-open
+                                            p Здравствуйте. Я учусь в России на первом курсе Юридического Факультета РАНХиГС. В этом году хочу перевестись к вам без потери курса. Есть ли такая возможность?
+                                            .wrapper-accordion-question
+                                                .wrapper-accordion-question_avatar
+                                                    img(src='img/avatar/avatar-1.png')
+                                                .wrapper-accordion-question_content
+                                                    .wrapper-accordion-question_name Жилинский Марат Геннадьевич
+                                                    .wrapper-accordion-question_position Ректор, кандидат исторических наук, доцент.
+                                                    p Здравствуйте!
+                                                    p В соответствии с Правилами приема лиц для получения высшего образования I ступени, утвержденными Указом Президента Республики Беларусь от 07.02.2006 № 80 (далее – Правила приема), зачисление для получения высшего образования осуществляется по результатам вступительных испытаний в форме централизованного тестирования.
+                                                    p Также, в соответствии с пунктом 24 Правил приема установлен перечень лиц, поступающих без вступительных испытаний.
+                                                    p Дополнительную информацию по вопросам поступления и обучения Вы можете получить по телефону <b>+375 (17) 229-50-66</b>.
+                                        li.js-drop-open
+                                            p Здравствуйте. В связи с появлением информации от министерства образования о поступлении на эконом.специальности без вступительных экзаменов медалистам можно ли поступить к Вам на эконом.факультеты без ЦТ?
+                                        li.js-drop-open
+                                            p Я отчислен со второго курса, можно ли восстановится? Слышал, что после 3 лет восстанавливаться нельзя.
+                                        li.js-drop-open
+                                            p Здравствуйте. Скажите, пожалуйста, будет ли осуществляться приём по целевому направлению на специальность «Государственное управление и право»? Если да, то какие будут проходные баллы? Спасибо!
+                                        li.js-drop-open
+                                            p Здравствуйте. Я учусь в России на первом курсе Юридического Факультета РАНХиГС. В этом году хочу перевестись к вам без потери курса. Есть ли такая возможность?
+                                        li.js-drop-open
+                                            p Я отчислен со второго курса, можно ли восстановится? Слышал, что после 3 лет восстанавливаться нельзя.
+                                .block-search-results-nav
+                                    ul
+                                        li.btn-prev
+                                            a(href='#')
+                                        li.number
+                                            a(href='#') 1
+                                        li.interval
+                                            a(href='#') ...
+                                        li.number
+                                            a(href='#') 4
+                                        li.number.active
+                                            a(href='#') 5
+                                        li.number
+                                            a(href='#') 6
+                                        li.interval
+                                            a(href='#') ...
+                                        li.number
+                                            a(href='#') 12
+                                        li.btn-next
+                                            a(href='#')
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further.revealator-zoomin.revealator-once
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link история академии управления
+            section.container-wrapper-content
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

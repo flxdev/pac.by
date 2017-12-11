@@ -1,0 +1,357 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg1.png')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title Поиск
+                        .bread-crumbs
+                            a(href='#') Главная
+                            span Поиск
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-search-wrapper.width-100
+                        .block-search-input
+                            form.js-form
+                                input.input(type='text' placeholder='Поиск по сайту академии' data-validation="required")
+                                button.btn-search
+                                    <svg width="20.6" height="20.6" xmlns="http://www.w3.org/2000/svg">
+                                    <style type="text/css">.st0{fill:#000000;}</style>
+                                    <g>
+                                    <path id="svg_1" d="m20.5,19.1l-5.3,-5.3c1.1,-1.5 1.8,-3.3 1.8,-5.3c0,-4.7 -3.8,-8.5 -8.5,-8.5c-4.7,0 -8.5,3.8 -8.5,8.5c0,4.7 3.8,8.5 8.5,8.5c2,0 3.8,-0.7 5.3,-1.8l5.3,5.3c0.1,0.1 0.3,0.1 0.4,0l1.1,-1.1c0,-0.1 0,-0.2 -0.1,-0.3zm-16.6,-5.9c-1.2,-1.2 -1.9,-2.9 -1.9,-4.7c0,-1.8 0.7,-3.4 1.9,-4.6c1.2,-1.2 2.8,-1.9 4.6,-1.9c1.8,0 3.4,0.7 4.6,1.9c1.2,1.2 1.9,2.8 1.9,4.6c0,1.8 -0.7,3.4 -1.9,4.6c-1.2,1.2 -2.8,1.9 -4.6,1.9c-1.8,0.1 -3.4,-0.7 -4.6,-1.8z" class="st0"/>
+                                    </g>
+                                    </svg>
+
+                                .map-site-search-filter
+                                    .map-site-search-filter_radio.black-txt
+                                        input(type='radio' name='search' id ='radio-search-1' checked="checked")
+                                        label(for='radio-search-1') Поиск по сайту
+                                        input(type='radio' name='search' id ='radio-search-2')
+                                        label(for ='radio-search-2') Поиск по пресс-центру
+                        .wrapper-search-results
+                            .three-title ничего не найдено
+                            .container-search-results
+                                .container-search-results-no_txt Извините, по вашему запросу ничего не найдено. <br> Попробуйте другие ключевые слова.
+                                .map-site-content_list.page-m
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Академия
+                                            li
+                                                a(href='#') История
+                                            li
+                                                a(href='#') Научная деятельность
+                                            li
+                                                a(href='#') Инновационная площадка
+                                            li
+                                                a(href='#') Идеологическая и воспитательная работа
+                                            li
+                                                a(href='#') Общественная жизнь
+                                            li
+                                                a(href='#') Ректорат
+                                            li
+                                                a(href='#') Преподавательский состав
+                                            li
+                                                a(href='#') Структура
+                                            li
+                                                a(href='#') Достижения Академии
+
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Поступающим
+                                            li
+                                                a(href='#') Абитуриенту
+                                            li
+                                                a(href='#') Магистранту
+                                            li
+                                                a(href='#') Слушателю
+                                            li
+                                                a(href='#') Аспиранту
+                                            li
+                                                a(href='#') Повышение квалификации
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Обучающимся
+                                            li
+                                                a(href='#') Студенту
+                                            li
+                                                a(href='#') Магистранту
+                                            li
+                                                a(href='#') Слушателю
+                                            li
+                                                a(href='#') Аспиранту
+                                            li
+                                                a(href='#') Дистанционное образование
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Услуги
+                                            li
+                                                a(href='#') Спортивный комплекс
+                                            li
+                                                a(href='#') Жилищный комплекс
+                                            li
+                                                a(href='#') Редакционно-издательский центр
+                                            li
+                                                a(href='#') Торговый комплекс
+                                    .map-site-content_list-item
+                                        ul
+                                            li.no-title
+                                                a(href='#') Кабинет абитуриента
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Пресс-центр
+                                            li
+                                                a(href='#') Наши новости
+                                            li
+                                                a(href='#') СМИ об Академии управления
+                                    .map-site-content_list-item
+                                        ul
+                                            li
+                                                a(href='#') Контакты
+                                            li
+                                                a(href='#') Форма обратной связи
+
+                                .block-modile-menu.white-menu
+                                    .wrapper-accordion-mobile-menu
+                                        ul
+                                            li.js-drop-open-mobile
+                                                p Академия
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+                                            li.js-drop-open-mobile
+                                                p Поступающим
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+                                            li.js-drop-open-mobile
+                                                p Обучающимся
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+                                            li.js-drop-open-mobile
+                                                p Услуги
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+                                            li.js-drop-open-mobile
+                                                p Пресс-центр
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+                                            li.js-drop-open-mobile
+                                                p Контакты
+                                                    span.icon-arrow
+                                                        <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                        <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                        <g>
+                                                        <g id="svg_1">
+                                                        <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                        </g>
+                                                        </g>
+                                                        </svg>
+                                                .mobile-menu_dop
+                                                    a.mobile-menu_dop-link(href='#') История
+                                                    a.mobile-menu_dop-link(href='#') Научная деятельность
+                                                    a.mobile-menu_dop-link(href='#') Инновационная площадка
+                                                    a.mobile-menu_dop-link(href='#') Идеологическая и воспитательная работа
+                                                    a.mobile-menu_dop-link(href='#') Общественная жизнь
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Ректорат
+                                                    a.mobile-menu_dop-link(href='#') Структура
+                                                    a.mobile-menu_dop-link(href='#') Достижения Академии
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further.revealator-zoomin.revealator-once
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link задать вопрос ректору
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

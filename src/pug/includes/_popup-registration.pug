@@ -1,0 +1,74 @@
+#hidden-content-r.w-p(style='display: none;')
+    .wrapper-popup
+        .three-title-popup регистрация
+        form.js-form
+            .wrapper-form
+                .block-label-input
+                    .block-label
+                        label Имя<span>*</span>
+                    .block-input
+                        input(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Фамилия<span>*</span>
+                    .block-input
+                        input(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input-res
+                    .block-label-input-s
+                        .block-label
+                            label Серия<span>*</span>
+                        .block-input
+                            input(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                    .block-label-input-b
+                        .block-label
+                            label Номер паспорта<span>*</span>
+                        .block-input
+                            input(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Телефон
+                    .block-input
+                        input(placeholder="+375 (__) ___-__-__" type='tel' data-validation="custom" data-validation-regexp="(([0-9-]+)).{7,}")
+                .block-label-input
+                    .block-label
+                        label E-mail<span>*</span>
+                    .block-input
+                        input(type='email' data-validation="email required" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Пароль<span>*</span>
+                    .block-input
+                        input(type='password' data-validation="custom required" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Повторить пароль <span>*</span>
+                    .block-input
+                        input(type='password' data-validation="custom required" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-pass-reg
+                    .block-forgot-password
+                    .block-registration
+                        a(href='#')
+                            span.icon
+                                <svg xmlns="http://www.w3.org/2000/svg">
+                                <style type="text/css">.st0{fill:#0a3c90;}</style>
+                                <g>
+                                <title>background</title>
+                                </g>
+                                <g>
+                                <title>Layer 1</title>
+                                <g id="svg_1">
+                                <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                </g>
+                                </g>
+                                </svg>
+                            span.txt Авторизоваться
+                .block-btn-form
+                    button.btn-form Зарегистрироваться
+
+    // Modal Window
+    .wrapper-popup.response
+        .three-title-popup Благодарим вас!
+        p Вы успешно зарегистрировались на сайте Академии управления при Презденте Республики Беларусь. Следуйте дальнейшим иснтрукциям высланым на указанный вами e-mail.
+        .btn-close-c
+            span Закрыть

@@ -1,0 +1,698 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-anchor-slider.active
+                .wrapper-anchor-slider
+                    .swiper-anchor-slider
+                        div
+                            .box-anchor-year-touch 1991
+                            a.anchor-slider(href='#1991')
+                        div
+                            .box-anchor-year-touch 1992
+                            a.anchor-slider(href='#1992')
+                        div
+                            .box-anchor-year-touch 1994
+                            a.anchor-slider(href='#1994')
+                        div
+                            .box-anchor-year-touch 1995
+                            a.anchor-slider(href='#1995')
+                        div
+                            .box-anchor-year-touch 1996
+                            a.anchor-slider(href='#1996')
+                        div
+                            .box-anchor-year-touch 1997
+                            a.anchor-slider(href='#1997')
+                        div
+                            .box-anchor-year-touch 1998
+                            a.anchor-slider(href='#1998')
+                        div
+                            .box-anchor-year-touch 2000
+                            a.anchor-slider(href='#2000')
+                        div
+                            .box-anchor-year-touch 2001
+                            a.anchor-slider(href='#2001')
+                        div
+                            .box-anchor-year-touch 2002
+                            a.anchor-slider(href='#2002')
+                        div
+                            .box-anchor-year-touch 2003
+                            a.anchor-slider(href='#2003')
+                        div
+                            .box-anchor-year-touch 2004
+                            a.anchor-slider(href='#2004')
+                        div
+                            .box-anchor-year-touch 2007
+                            a.anchor-slider(href='#2007')
+                        div
+                            .box-anchor-year-touch 2008
+                            a.anchor-slider(href='#2008')
+                        div
+                            .box-anchor-year-touch 2009
+                            a.anchor-slider(href='#2009')
+                        div
+                            .box-anchor-year-touch 2010
+                            a.anchor-slider(href='#2010')
+                        div
+                            .box-anchor-year-touch 2011
+                            a.anchor-slider(href='#2011')
+                        div
+                            .box-anchor-year-touch 2014
+                            a.anchor-slider(href='#2014')
+                        div
+                            .box-anchor-year-touch 2015
+                            a.anchor-slider(href='#2015')
+                        div
+                            .box-anchor-year-touch 2016
+                            a.anchor-slider(href='#2016')
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg-rec.jpg')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title История академии управления
+                        .bread-crumbs
+                            a(href='#') Главная
+                            a(href='#') Академия
+                            span История
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .wrapper_row-nav
+                                ul
+                                    li
+                                        a(href='#') История
+                                    li
+                                        a(href='#') Научная деятельность
+                                    li
+                                        a(href='#') Инновационная площадка
+                                    li
+                                        a(href='#') Идеологическая и воспитательная работа
+                                    li
+                                        a(href='#') Общественная жизнь
+                                    li
+                                        a(href='#').active Ректорат
+                                    li
+                                        a(href='#') Преподавательский состав
+                                    li
+                                        a(href='#') Структура
+                                    li
+                                        a(href='#') Достижения Академии
+                            .wrapper_row-social-print.hidden-xs.d-none
+                                .wrapper_row-social
+                                    a.link-social(href='#')
+                                        img(src='img/vk-icon.png' alt='')
+                                    a.link-social(href='#')
+                                        img(src='img/google-icon.png' alt='')
+                                    a.link-social(href='#')
+                                        img(src='img/face-icon.png' alt='')
+                                .wrapper_row-print
+                                    a(href='#').btn-print
+                                        span.icon-print
+                                            <svg width="20" height="20.5" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#999999;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <path id="svg_2" d="m18,5.5l-1.5,0l0,-5.5l-13,0l0,5.5l-1.5,0c-1.1,0 -2,0.9 -2,2l0,7.2c0,1.1 0.9,2 2,2l1.5,0l0,4l13,0l0,-0.7l0,-3.5l1.5,0c1.1,0 2,-0.9 2,-2l0,-7.1c0,-1.1 -0.9,-1.9 -2,-1.9zm-13.5,-4.5l11,0l0,4.5l-11,0l0,-4.5zm0,18.5l0,-6.9l11,0l0,6.9l-11,0zm14.5,-4.9c0,0.5 -0.4,1 -1,1l-1.5,0l0,-4l-13,0l0,4l-1.5,0c-0.5,0 -1,-0.4 -1,-1l0,-7.2c0,-0.5 0.4,-1 1,-1l1.5,0l13,0l1.5,0c0.5,0 1,0.4 1,1l0,7.2z" class="st0"/>
+                                            <circle id="svg_3" r="0.7" cy="8.7" cx="16.8" class="st0"/>
+                                            <rect id="svg_4" height="1" width="6.9" class="st0" y="15.6" x="5.6"/>
+                                            <rect id="svg_5" height="1" width="8.8" class="st0" y="13.6" x="5.6"/>
+                                            <rect id="svg_6" height="1" width="8.8" class="st0" y="17.6" x="5.6"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.txt Версия для печати
+                        .content-row-wrapper_row-txt
+                            .wrapper_row-txt
+                                .container-anchor
+                                    ul
+                                        li.active-anchor
+                                            a(href="#1991" data-slider-number="0").anchor-touch 1991
+                                        li
+                                            a(href="#1992" data-slider-number="1").anchor-touch 1992
+                                        li
+                                            a(href="#1994" data-slider-number="2").anchor-touch 1994
+                                        li
+                                            a(href="#1995" data-slider-number="3").anchor-touch 1995
+                                        li
+                                            a(href="#1996" data-slider-number="4").anchor-touch 1996
+                                        li
+                                            a(href="#1997" data-slider-number="5").anchor-touch 1997
+                                        li
+                                            a(href="#1998" data-slider-number="6").anchor-touch 1998
+                                        li
+                                            a(href="#2000" data-slider-number="7").anchor-touch 2000
+                                        li
+                                            a(href="#2001" data-slider-number="8").anchor-touch 2001
+                                        li
+                                            a(href="#2002" data-slider-number="9").anchor-touch 2002
+                                        li
+                                            a(href="#2003" data-slider-number="10").anchor-touch 2003
+                                        li
+                                            a(href="#2004" data-slider-number="11").anchor-touch 2004
+                                        li
+                                            a(href="#2007" data-slider-number="12").anchor-touch 2007
+                                        li
+                                            a(href="#2008" data-slider-number="13").anchor-touch 2008
+                                        li
+                                            a(href="#2009" data-slider-number="14").anchor-touch 2009
+                                        li
+                                            a(href="#2010" data-slider-number="15").anchor-touch 2010
+                                        li
+                                            a(href="#2011" data-slider-number="16").anchor-touch 2011
+                                        li
+                                            a(href="#2014" data-slider-number="17").anchor-touch 2014
+                                        li
+                                            a(href="#2015" data-slider-number="18").anchor-touch 2015
+                                        li
+                                            a(href="#2016" data-slider-number="19").anchor-touch 2016
+                                .container-date
+                                    .wrapper-date-content#1991(data-number-news='0')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1991
+                                                .wrapper-date-content_date-month 29 января
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Совет Министров Белорусской ССР принял постановление «О первоочередных мерах по подготовке, переподготовке и повышению квалификации кадров органов государственного управления, руководителей и специалистов народного хозяйства для работы в условиях рыночной экономики».
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-1.jpg' alt='')
+                                                p Главный корпус Академии управления на улице Московская 17
+                                            .wrapper-date-content_text-47
+                                                p Министерству народного образования БССР, министерствам и ведомствам, имеющим высшие и средние специальные учебные заведения, поручалось уже с 1990/1991 учебного года внести необходимые изменения в содержание обучения специалистов, пересмотреть квалификационные характеристики выпускников. В соответствии с программой перехода к рыночным отношениям обеспечить ускоренную подготовку кадров с высшим образованием по маркетингу, банковскому и биржевому делу, управлению персоналом, налоговому законодательству. В качестве головного учебного и научно-методического центра новой системы подготовки, переподготовки и повышения квалификации кадров органов государственного управления была определена Академия управления при Совете Министров БССР.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month Апрель
+                                            .wrapper-date-content_text-23
+                                                p В апреле 1991 года в течение создана библиотека. И уже в течение 1991 года Академия была призвана провести целевую подготовку по программе перехода к рыночной экономике руководителей и специалистов Совета Министров БССР, министерств и ведомств, исполкомов областных и Минского городского Советов депутатов, ведущих промышленных предприятий и объединений.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 28 ноября
+                                            .wrapper-date-content_text-23
+                                                p По решению Совета Министров Республики Беларусь в Академии управления с целью реализации международных учебных и научных программ и проектов по подготовке кадров в сфере государственного управления, осуществления международного сотрудничества с зарубежными обучающими центрами, проведения международных семинаров и конференций, организации стажировок преподавателей и слушателей за рубежом был образован Международный центр подготовки менеджеров и делового сотрудничества. Нынешнее название подразделения – Центр международного сотрудничества и образовательных программ.
+
+
+                                    .wrapper-date-content#1992(data-number-news='1')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1992
+                                                .wrapper-date-content_date-month 14 сентября
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Постановлением Совета Министров Республики Беларусь назначен первый ректор Академии Шрубенко Анатолий Григорьевич.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-2.jpg' alt='')
+                                                p.bold-img Шрубенко Анатолий Григорьевич
+                                                p Профессор-консультант ректората, доктор экономических наук, профессор
+                                            .wrapper-date-content_text-47
+                                                p.date-txt Февраль
+                                                p В феврале 1992 года Академия управления приобрела свой нынешний юридический адрес: г. Минск, ул. Московская, 17, разместившись на базе упраздненного Республиканского межотраслевого института повышения квалификации руководящих работников и специалистов отраслей народного хозяйства.
+                                            .wrapper-date-content_text-47
+                                                p.date-txt Март
+                                                p В структуре Академии управления создан факультет менеджмента. Занятия на факультете начались с 1 сентября 1992 года. В 2000 году на базе факультета создан Институт государственного управления
+                                            .wrapper-date-content_text-47
+                                                p.date-txt Июнь
+                                                p Состоялся первый выпуск слушателей Академии управления.
+
+
+                                    .wrapper-date-content#1994(data-number-news='2')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1994
+                                                .wrapper-date-content_date-month 23 ноября
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Постановлением Кабинета Министров Республики Беларусь № 194 Академия переименована в Академию управления при Кабинете Министров Республики Беларусь.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Однако принципиально новый этап в деятельности учебного заведения начался с 1995 года.
+
+
+                                    .wrapper-date-content#1995(data-number-news='3')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1995
+                                                .wrapper-date-content_date-month 26 июня
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Указом Президента Республики Беларусь № 231 Академия была преобразована в Академию управления при Президенте Республики Беларусь.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Главой государства дан ряд поручений, обеспечивших принципиально новый этап в деятельности учебного заведения. Администрацией Президента Республики Беларусь утвержден новый Устав Академии. Кабинетом Министров совместно с Академией разработана концепция и программа развития. Министерством финансов обеспечено финансирование обучения кадров из республиканского бюджета. Управлением делами Президента Республики Беларусь решены вопросы о выделении Академии зданий и сооружений, необходимых для организации работы.
+
+                                    .wrapper-date-content#1996(data-number-news='4')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1996
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В структуре Академии управления создан Институт высших управленческих кадров.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 20 ноября
+                                            .wrapper-date-content_text-23
+                                                p Приказом ректора № 447-од на базе филиала Президентской библиотеки создана библиотека Академии управления.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 28 ноября
+                                            .wrapper-date-content_text-23
+                                                p Указом Президента Республики Беларусь № 498 утверждена Концепция развития Академии управления при Президенте Республики Беларусь, определяющая основные этапы обеспечения профессиональной подготовки кадров, соответствующей современным требованиям социально-экономического и политического развития государства.
+                                                p В целях реализации данной концепции Академией управления был подготовлен проект Государственного образовательного стандарта повышения квалификации и переподготовки кадров, разработаны типовые тематические планы и программы обучения, предложения о подготовке научно-педагогических кадров для работы в новых условиях.
+                                                p Совместными усилиями органов государственного управления и исполнительной власти отработан механизм формирования контингента обучающихся в Академии и приема слушателей. Налажены порядок научного и информационно-технического обеспечения учебного процесса и методика преподавания, система подбора и подготовки научно-педагогических кадров через аспирантуру и докторантуру. Установлено деловое сотрудничество Академии с рядом учебных заведений стран Западной Европы и СНГ. Циклы совместных семинаров с Федеральной школой государственного управления (ФРГ, г. Брюль) показали высокую квалификацию преподавателей Академии, наметили новые направления совместной деятельности.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 26 апреля
+                                            .wrapper-date-content_text-23
+                                                p В соответствии с Распоряжением Президента Республики Беларусь № 112рп  организован постоянно действующий семинар руководящих работников республиканских органов государственного управления, возглавляемый Главой Администрации Президента Республики Беларусь М.В. Мясниковичем.
+
+
+                                    .wrapper-date-content#1997(data-number-news='5')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 1997
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Открыта спортивная площадка возле учебного корпуса № 1.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 31 декабря
+                                            .wrapper-date-content_text-23
+                                                p Постановлением Совета Министров Республики Беларусь № 1791 утверждена Программа развития Академии управления при Президенте Республики Беларусь до 2000 года. Цель данной Программы – создание необходимых организационно-экономических, финансовых, правовых условий для превращения Академии в ведущий научный и учебный центр, позволяющий обеспечить существенное повышение качества подготовки управленческих кадров. При разработке Программы развития был использован положительный отечественный и зарубежный опыт ведущих центров подготовки руководящих кадров, в том числе Российской Федерации, Украины, Германии, Франции и других стран.
+
+
+                                    .wrapper-date-content#1998(data-number-news='6')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year с 1998
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Стала применяться новая методика отбора кандидатов на обучение в Академии.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Она включала: комплексный устный экзамен по проверке специальных знаний в области экономики и управления; экзамен по иностранному языку; тестирование с использованием международной методики Р. Блека для оценки личностных качеств и профессиональных склонностей; всестороннюю проверку физического состояния здоровья кандидатов. Была начата реализация специального образовательного проекта по подготовке специалистов для работы в органах государственного управления из числа талантливой молодежи. Среди студентов 19 вузов Республики Беларусь, успешно закончивших два первых курса своих учебных заведений, были отобраны 20 человек, которые продолжили обучение в Академии по специальности «Государственное и местное управление».
+
+
+                                    .wrapper-date-content#2000(data-number-news='7')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2000
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В структуре Академии управления созданы Институт государственной службы в целях осуществления профессиональной переподготовки руководящих кадров органов государственного и хозяйственного управления и Институт государственного управления для подготовки специалистов с высшим образованием на базе среднего и среднего специального образования; получения второго высшего образования.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Научно-исследовательский центр проблем государственной кадровой политики и совершенствования государственного управления реорганизован в Научно-исследовательский институт теории и практики государственного управления
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 21 июля
+                                            .wrapper-date-content_text-23
+                                                p Указом Президента Республики Беларусь № 407 от 21.07.2000 ректором Академии управления при Президенте Республики Беларусь назначен Бригадин Петр Иванович.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 1 сентября
+                                            .wrapper-date-content_text-23
+                                                p Президент Республики Беларусь Александр Лукашенко посетил Академию управления. В рамках визита состоялась встреча с профессорско-преподавательским составом.
+
+
+
+                                    .wrapper-date-content#2001(data-number-news='8')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2001
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В структуре Академии управления создан Молодёжный центр.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p В соответствии с поручением Главы государства об усилении воспитательной работы в высших учебных заведениях, приказом ректора Академии управления № 243 от 17.11.2003 Молодежный центр переименован в Центр воспитательной работы и молодежных инициатив.
+
+                                        img(src='img/history/history-3.jpg' alt='').img-100
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 12 ноября
+                                            .wrapper-date-content_text-23
+                                                p В соответствии с Распоряжением Президента Республики Беларусь № 330рп «О совершенствовании работы постоянно действующего семинара руководящих работников республиканских и местных органов» работа семинара осуществляется под руководством Президента Республики Беларусь. С целью повышения уровня педагогического мастерства профессорско-преподавательского состава начал действовать методологический семинар для молодых преподавателей и аспирантов. Были упорядочены вопросы планирования и организации повышения квалификации профессорско-преподавательского состава и научных сотрудников, порядок их стажировок в органах государственного и хозяйственного управления и на предприятиях. Стала применяться новая методика оценки качества и результативности труда работников Академии.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-4.jpg' alt='')
+                                                p.bold-img Кухарчик Петр Дмитриевич
+                                                p Доктор технических наук, пофессор, заслуженный работник образования Республики Беларусь
+                                            .wrapper-date-content_text-47
+                                                p.date-txt 14 ноября
+                                                .wrapper_row-title 14 ноября 2001 года Указом Президента Республики Беларусь № 676 от 14.11.2001 ректором Академии управления при Президенте Республики Беларусь назначен Кухарчик Петр Дмитриевич.
+
+
+                                    .wrapper-date-content#2002(data-number-news='9')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2002
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Приказом ректора № 54 от 11.03.2002 при учебно-методи-ческом кабинете права создана общественная юридическая приемная для оказания правовой помощи малоимущим гражданам Республики Беларусь.
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 1 марта
+                                            .wrapper-date-content_text-23
+                                                p Вышел первый номер газеты «Зеркало».
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month Октябрь
+                                            .wrapper-date-content_text-23
+                                                p В Академии управления создана первичная организация с правами райкома общественного объединения «Белорусский республиканский союз молодежи».
+
+
+                                    .wrapper-date-content#2003(data-number-news='10')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2003
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В Академии управления создано Студенческое научное общество, которое объединило студентов Академии управления, активно участвующих в научно-исследовательской работе, членов студенческих научных клубов.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-5.jpg' alt='')
+                                                p.bold-img Князев Станислав Никифорович
+                                                p Князев Станислав Никифорович
+                                            .wrapper-date-content_text-47
+                                                p.date-txt 25 марта
+                                                p Указом Президента Республики Беларусь № 124 от 25.03.2003 ректором Академии управления при Президенте Республики Беларусь назначен Князев Станислав Никифорович.
+
+
+                                    .wrapper-date-content#2004(data-number-news='11')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2004
+                                                .wrapper-date-content_date-month Март
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Создан Совет молодых ученых Академии управления при Президенте Республики Беларусь.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-6.jpg' alt='')
+                                                p Совет молодых ученых Академии управления
+                                            .wrapper-date-content_text-47
+                                                p.date-txt 26 июля
+                                                p Указом Президента Республики Беларусь утверждено Положение об организации работы с руководящими кадрами в системе государственных органов и иных государственных организаций. Этим Положением Академия управления определена как ведущее государственное высшее учебное заведение в системе подготовки, переподготовки и повышения квалификации руководящих кадров государственных органов (организаций).
+                                                p В обучении стали использоваться электронные технологии. В соответствии с программой Фонда информатизации по созданию Научно-исследовательской компьютерной сети (НИКС) осуществлена прокладка волоконно-оптической линии связи между Академией и Центром информационных технологий Белгосуниверситета. Создан внешний контур компьютерной сети Академии и учебный центр на основе Internet-технологий, доступный всем пользователям компьютерной сети Академии, работает web-сервер Академии.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month Декабрь
+                                            .wrapper-date-content_text-23
+                                                p Открыт после реконструкции учебный корпус № 2 Академии управления. Здание является историко-культурной ценностью, построено в 1950-е годы по проекту архитектора Аркадия Брегмана.
+
+
+                                    .wrapper-date-content#2007(data-number-news='12')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2007
+                                                .wrapper-date-content_date-month 15 ноября
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Указом Президента Республики Беларусь №577 от 15.11.2007 ректором Академии управления при Президенте Республики Беларусь назначен доктор технических наук, профессор Морозевич Анатолий Николаевич.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-7.jpg' alt='')
+                                                p.bold-img Морозевич Анатолий Николаевич
+                                                p Учёный и деятель образования, доктор технических наук, профессор.
+
+
+                                    .wrapper-date-content#2008(data-number-news='13')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2008
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Председателем Правления Общества дружбы «Беларусь – Венесуэла» избран ректор Академии управления Анатолий Морозевич. В Академии управления открыто отделение Общества дружбы «Беларусь – Венесуэла».
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-8.jpg' alt='')
+                                            .wrapper-date-content_text-47
+                                                p.date-txt Апрель
+                                                p В составе официальной делегации во главе с Президентом Республики Беларусь Александром Лукашенко ректор Академии управления Анатолий Морозевич посетил Социалистическую Республику Вьетнам.
+                                            .wrapper-date-content_text-47
+                                                p.date-txt Сентябрь
+                                                p В структуре Академии управления создан Пресс-центр.
+
+
+
+                                    .wrapper-date-content#2009(data-number-news='14')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2009
+                                                .wrapper-date-content_date-month 2 июня
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Указ Президента Республики Беларусь №275 «О некоторых мерах по совершенствованию подготовки, переподготовки и повышения квалификации кадров в сфере управления» определил систему подготовки управленческой элиты страны.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Настоящим Указом утвержден Устав Академии управления. В соответствии с Уставом в структуру Академии управления входят Институт государственной службы, Институт управленческих кадров, Научно-исследовательский институт теории и практики государственного управления.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 29 июня
+                                            .wrapper-date-content_text-23
+                                                p Состоялось торжественное открытие музейной экспозиции Академии управления.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 21 сентября
+                                            .wrapper-date-content_text-23
+                                                p Министерством юстиции Республики Беларусь зарегистрированы официальные геральдические символы Академии управления.
+
+
+                                    .wrapper-date-content#2010(data-number-news='15')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2010
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В музейно-выставочном комплексе Академии управления открылась выставка «65 лет Великой Победы».
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p Выставка создана в рамках проекта гражданского и патриотического воспитания студентов и слушателей академии. В экспозиции представлено более 400 предметов. Среди них – документы, фотографии, картографические источники, плакаты военного времени, газеты, листовки и другие материалы.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 1 сентября
+                                            .wrapper-date-content_text-23
+                                                p На факультете подготовки Института государственной службы в соответствии с государственным заказом впервые начата подготовка на базе высшего образования управленческих кадров по специальности «Государственное строительство».
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 27 января
+                                            .wrapper-date-content_text-23
+                                                p Открыт спортивный комплекс в учебном корпусе № 1 Академии управления.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 29-30 марта
+                                            .wrapper-date-content_text-23
+                                                p По инициативе Академии управления состоялась встреча ректоров академий и институтов государственного управления и государственной службы стран ЕврАзЭС, в ходе которой был подписан Устав Ассоциации национальных академий и институтов государственного управления и государственной службы стран ЕврАзЭС.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 24 сентября
+                                            .wrapper-date-content_text-23
+                                                p Президент Республики Беларусь Александр Лукашенко выступил перед студентами и преподавателями Академии управления при Президенте Республики Беларусь на тему «Государственная кадровая политика на современном этапе»
+
+
+                                    .wrapper-date-content#2011(data-number-news='16')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2011
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Осуществлен первый набор в практикоориентированную магистратуру по специальности «Управление инвестиционными проектами в государственно-частном партнерстве».
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 24 января
+                                            .wrapper-date-content_text-23
+                                                p В реестре Национальной системы подтверждения соответствия Республики Беларусь зарегистрирован сертификат соответствия Академии управления при Президенте Республики Беларусь. Сертификат удостоверяет, что система менеджмента качества проектирования и предоставления услуг по довузовской подготовке, подготовке специалистов на первой ступени высшего образования, подготовке специалистов на второй ступени высшего образования, переподготовке и повышению квалификации кадров, подготовке научных работников высшей квалификации соответствует требованиям СТБ ISO 9001-2009.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-9.jpg' alt='')
+                                            .wrapper-date-content_text-47
+                                                p.date-txt 27 января
+                                                p Академия управления при Президенте Республики Беларусь отметила 20-летие со дня основания вуза.
+
+
+                                    .wrapper-date-content#2014(data-number-news='17')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2014
+                                                .wrapper-date-content_date-month 24 февраля
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title В Академии управления открылся новый спортивный комплекс.
+
+                                        .wrapper-date-content_left-img-text
+                                            .wrapper-date-content_left-img
+                                                img(src='img/history/history-10.jpg' alt='')
+                                                p.bold-img Жилинский Марат Геннадьевич
+                                                p Кандидат исторических наук, доцент
+                                            .wrapper-date-content_text-47
+                                                p.date-txt 15 декабря
+                                                p Указом Президента Республики Беларусь № 581 от 15 декабря 2014 года ректором Академии управления при Президенте Республики Беларусь назначен Жилинский Марат Геннадьевич, кандидат исторических наук, доцент.
+
+
+                                    .wrapper-date-content#2015(data-number-news='18')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2015
+                                                .wrapper-date-content_date-month 26 июня
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title Академия управления подготовила первый выпуск управленцев в сфере досудебного уголовного производства
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_text-23
+                                                p В соответствии с поручением Главы государства об усилении воспитательной работы в высших учебных заведениях, приказом ректора Академии управления № 243 от 17.11.2003 Молодежный центр переименован в Центр воспитательной работы и
+
+                                        img(src='img/history/history-11.jpg' alt='').img-100
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 15 декабря
+                                            .wrapper-date-content_text-23
+                                                p Торжественное открытие информационной таблички «Академия управления».
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month Декабрь
+                                            .wrapper-date-content_text-23
+                                                p Создано мобильное приложение Академии управления.
+
+
+                                    .wrapper-date-content#2016(data-number-news='19')
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-year 2016
+                                                .wrapper-date-content_date-month 26 января
+                                            .wrapper-date-content_text-23
+                                                .wrapper_row-title На телеканале «Беларусь-1» показан хроникально-документальный фильм «Академия управления… Первая четверть века!», посвященный 25-летию образования Академии управления при Президенте Республики Беларусь.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 29 января
+                                            .wrapper-date-content_text-23
+                                                p Академия управления при Президенте Республики Беларусь отметила 25-летие со дня основания.
+
+                                        .wrapper-date-content_date-text
+                                            .wrapper-date-content_date
+                                                .wrapper-date-content_date-month 3 мая
+                                            .wrapper-date-content_text-23
+                                                p В Академии управления стартовало студенческое телевидение.
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link история академии управления
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

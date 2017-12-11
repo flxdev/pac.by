@@ -1,0 +1,341 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg-incoming.jpg')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title расписание занятий
+                        .bread-crumbs
+                            a(href='#') Главная
+                            span Расписание занятий
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .wrapper_row-nav
+                                ul
+                                    li
+                                        a(href='#').active Абитуриенту
+                                            span.icon-arrow
+                                                <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                <g>
+                                                <g id="svg_1">
+                                                <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                </g>
+                                                </g>
+                                                </svg>
+                                        .wrapper-accordion-nav
+                                            a(href='#').wrapper-accordion-nav_link Нормативные документы
+                                            a(href='#').wrapper-accordion-nav_link Вступительная кампания
+                                            a(href='#').wrapper-accordion-nav_link Специальности и программы обучения
+                                            a(href='#').wrapper-accordion-nav_link Стоимость обучения
+                                            a(href='#').wrapper-accordion-nav_link Иностранному абитуриенту
+                                            a(href='#').wrapper-accordion-nav_link Подготовительные курсы
+                                            a(href='#').wrapper-accordion-nav_link Централизованное тестирование
+                                            a(href='#').wrapper-accordion-nav_link Общежитие
+                                    li
+                                        a(href='#') Магистранту
+                                    li
+                                        a(href='#') Слушателю
+                                    li
+                                        a(href='#') Аспиранту
+                                    li
+                                        a(href='#') Повышение квалификации
+                        .content-row-wrapper_row-txt
+                            .wrapper_row-incoming
+                                .wrapper-incoming_faculty-filter
+                                    .block-label-input
+                                        .block-input
+                                            .wrapper-teaching-staff_select#select1
+                                                .wrapper-teaching-staff_select-select
+                                                    select.select2(style="width: 100%" data-placeholder="Выберите")
+                                                        option(value='')
+                                                        option(value='Факультет 1') Факультет 1
+                                                        option(value='Факультет 2') Факультет 2
+                                                        option(value='Факультет 3') Факультет 3
+                                                        option(value='Факультет 4') Факультет 4
+                                                        option(value='Факультет 5') Факультет 5
+
+                                    .block-label-input
+                                        .block-input
+                                            .wrapper-teaching-staff_select#select2
+                                                .wrapper-teaching-staff_select-select
+                                                    select.select2.disabled-select(style="width: 100%" data-placeholder="Выберите")
+                                                        option(value='')
+                                                        option(value='Группа 1') Группа 1
+                                                        option(value='Группа 2') Группа 2
+                                                        option(value='Группа 3') Группа 3
+                                                        option(value='Группа 4') Группа 4
+                                                        option(value='Группа 5') Группа 5
+
+                                    .block-label-input
+                                        .block-input
+                                            .wrapper-teaching-staff_select#select3
+                                                .wrapper-teaching-staff_select-select
+                                                    select.select2.disabled-select(style="width: 100%" data-placeholder="Выберите")
+                                                        option(value='')
+                                                        option(value='Курс 1') Курс 1
+                                                        option(value='Курс 2') Курс 2
+                                                        option(value='Курс 3') Курс 3
+                                                        option(value='Курс 4') Курс 4
+                                                        option(value='Курс 5') Курс 5
+
+                                .wrapper-incoming_faculty-options
+                                    .block-faculty-info
+                                        .faculty-name Факультет управления
+                                        .faculty-group Группа ГУЭ, 1-й курс
+                                    .block-calendar
+                                        // Когда кнопка не активна добавляем класс .no-active-date
+                                        .btn-prev-date
+                                            span.icon-prev-c
+                                        .btn-next-date
+                                            span.icon-next-c
+                                        .container-calendar
+                                            // скрытй инпут начальное знач
+                                            input(type="text" name="startDate").startDate
+                                            // скрытй инпут конечное знач
+                                            input(type="text" name="endDate").endDate.week-picker#week-picker
+                                            span.icon-calendar
+                                            span.startDate
+                                            | —
+                                            span.endDate
+                                            span.icon-drop
+                                                b(role='presentation')
+                                    //.block-faculty-option
+                                    //    a(href='javascript:;' data-fancybox data-src='#hidden-content-o').btn-blue Изменить параметры
+                                .wrapper-incoming-schedule
+                                    a(href='javascript:;' data-fancybox data-src='#hidden-content-info-day').wrapper-incoming-day.active
+                                        .block-day-week
+                                            .block-day-week_day Понедельник
+                                            .block-day-week_data 7 августа
+                                            .block-data-week_today Сегодня
+                                        .block-classes
+                                            ol
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Производственные процессы и технологии
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.517
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Государственное управление
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Философия
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+                                    a(href="#").wrapper-incoming-day
+                                        .block-day-week
+                                            .block-day-week_day Вторник
+                                            .block-day-week_data 8 августа
+                                        .block-classes
+                                            ol
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Основы права
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.712
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Социалогия управления
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.713
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Иностранный язык
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+                                    a(href="#").wrapper-incoming-day
+                                        .block-day-week
+                                            .block-day-week_day Среда
+                                            .block-day-week_data 9 августа
+                                        .block-classes
+                                            .block-classes_txt Занятий нет
+
+                                    a(href="#").wrapper-incoming-day
+                                        .block-day-week
+                                            .block-day-week_day Четверг
+                                            .block-day-week_data 10 августа
+                                        .block-classes
+                                            ol
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Экономическая теория
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.712
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Экономическая теория
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.713
+
+                                    a(href="#").wrapper-incoming-day
+                                        .block-day-week
+                                            .block-day-week_day Пятница
+                                            .block-day-week_data 11 августа
+                                        .block-classes
+                                            ol
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Производственные процессы и технологии
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.517
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Государственное управление
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Философия
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+                                    a(href="#").wrapper-incoming-day
+                                        .block-day-week
+                                            .block-day-week_day Суббота
+                                            .block-day-week_data 12 августа
+                                        .block-classes
+                                            ol
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Основы права
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.712
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Социалогия управления
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.713
+
+                                                li
+                                                    .block-classes-list
+                                                        .block-classes-name Иностранный язык
+                                                        .block-classes-type Лекция
+                                                    .block-classes-number а.807
+
+
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further.revealator-zoomin.revealator-once
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link магистратура академии управления
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

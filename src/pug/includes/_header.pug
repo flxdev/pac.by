@@ -1,0 +1,376 @@
+include _map-site
+include _search-site
+
+.container-wrapper-header
+    .block-header
+        a(href='javascript:void(0)').block-header-logo.hidden-xs
+            img(src='img/logo.png' alt='')
+        .block-header-logo-mobile
+            img(src='img/logo.png' alt='')
+        .block-header-menu
+            nav.js-menu-category
+                ul.menu_categories.hidden-xs
+                    li
+                        a.active-link.topAnchorLink(href='incoming.html' data-index='1') Поступающим
+                    li
+                        a.active-link.topAnchorLink(href='entrant.html' data-index='2') Обучающимся
+                    li
+                        a.active-link.topAnchorLink(href='about.html' data-index='3') Академия
+                    li.hidden-sm-menu
+                        a.active-link.topAnchorLink(href='services.html' data-index='4') Услуги
+                    li.hidden-sm-menu
+                        a.active-link.topAnchorLink(href='press-center.html' data-index='5') Пресс-центр
+                    li.hidden-sm-menu
+                        a.menu-no.topAnchorLink(href='contact.html') Контакты
+                .block-search-btn.js-search-open
+                    <svg width="16.6" height="16.6" xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">.st0{fill:#ffffff;}</style>
+                    <g>
+                    <path id="svg_1" d="m16.5,15.1l-4.2,-4.2c0.8,-1.1 1.3,-2.5 1.3,-4.1c0,-3.8 -3.1,-6.8 -6.8,-6.8c-3.7,0 -6.8,3.1 -6.8,6.8c0,3.8 3.1,6.8 6.8,6.8c1.5,0 2.9,-0.5 4.1,-1.3l4.2,4.2c0.1,0.1 0.3,0.1 0.4,0l1.1,-1.1c0,0 0,-0.2 -0.1,-0.3zm-13.1,-4.9c-0.8,-0.9 -1.4,-2 -1.4,-3.4c0,-1.3 0.5,-2.5 1.4,-3.4c0.9,-0.8 2.1,-1.4 3.4,-1.4c1.3,0 2.5,0.5 3.4,1.4c0.9,0.9 1.4,2.1 1.4,3.4c0,1.3 -0.5,2.5 -1.4,3.4c-0.9,0.9 -2.1,1.4 -3.4,1.4c-1.3,0 -2.5,-0.5 -3.4,-1.4z" class="st0"/>
+                    </g>
+                    </svg>
+                .block-map-site.btn-map-site.js-search-open-map-site
+                    <svg width="26.800000000000004" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                    <style type="text/css">.st0{fill: #ffffff;}</style>
+                    <g>
+                    <g id="svg_1">
+                    <path id="svg_2" d="m26.5,0l-26.2,0c-0.2,0 -0.3,0.1 -0.3,0.3l0,1.5c0,0.1 0.1,0.2 0.3,0.2l26.3,0c0.1,0 0.3,-0.1 0.3,-0.3l0,-1.4c-0.1,-0.2 -0.2,-0.3 -0.4,-0.3z" class="st0"/>
+                    <path id="svg_3" d="m26.5,5.1l-26.2,0c-0.2,0 -0.3,0.1 -0.3,0.2l0,1.5c0,0.2 0.1,0.3 0.3,0.3l26.3,0c0.1,0 0.3,-0.1 0.3,-0.3l0,-1.5c-0.1,-0.1 -0.2,-0.2 -0.4,-0.2z" class="st0"/>
+                    <path id="svg_4" d="m26.5,10.1l-26.2,0c-0.1,0 -0.3,0.1 -0.3,0.3l0,1.5c0,0.1 0.1,0.3 0.3,0.3l26.3,0c0.1,0 0.3,-0.1 0.3,-0.3l0,-1.5c-0.1,-0.2 -0.2,-0.3 -0.4,-0.3z" class="st0"/>
+                    </g>
+                    </g>
+                    </svg>
+                .wrapp_menu_categories-content.js-menu-category-content
+                    .menu_categories-content.js-menu-category-content-item(data-index='1')
+                        .menu_categories-content-header
+                            ul.menu-left.js-menu-hover
+                                li.active.js-left-menu-hover(data-tab='1')
+                                    a(href='#' ) Абитуриенту
+                                li.js-left-menu-hover(data-tab='2')
+                                    a(href='#' ) Магистранту
+                                li.js-left-menu-hover(data-tab='3')
+                                    a(href='#' ) Слушателю
+                                li.js-left-menu-hover(data-tab='4')
+                                    a(href='#' ) Аспиранту
+                                li(data-tab='5').js-left-menu-hover
+                                    a(href='#' ) Повышение квалификации
+                            .wrapp_content(data-tab-content='1').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='regulations.html') Нормативные документы
+                                        li
+                                            a.topAnchorLink(href='#') Вступительная кампания
+                                        li
+                                            a.topAnchorLink(href='specialties.html') Специальности и программы обучения
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Стоимость обучения
+                                        li
+                                            a.topAnchorLink(href='#') Иностранному абитуриенту
+                                        li
+                                            a.topAnchorLink(href='#') Подготовительные курсы
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Централизованное тестирование
+                                        li
+                                            a.topAnchorLink(href='#') Общежитие
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='2').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='regulations.html') Нормативные документы
+                                        li
+                                            a.topAnchorLink(href='#') Вступительная кампания
+                                        li
+                                            a.topAnchorLink(href='specialties.html') Специальности и программы обучения
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Стоимость обучения
+                                        li
+                                            a.topAnchorLink(href='#') Иностранному магистранту
+                                        li
+                                            a.topAnchorLink(href='#') Общежитие
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='3').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='regulations.html') Нормативные документы
+                                        li
+                                            a.topAnchorLink(href='#') Вступительная кампания
+                                        li
+                                            a.topAnchorLink(href='specialties.html') Специальности и программы обучения
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Стоимость обучения
+                                        li
+                                            a.topAnchorLink(href='#') Общежитие
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='4').smoll-menu.js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='regulations.html') Нормативные документы
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Вступительная кампания
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Специальности
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Иностранному аспиранту
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Стоимость обучения
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Общежитие
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+
+
+                    .menu_categories-content.js-menu-category-content-item(data-index='2')
+                        .menu_categories-content-header
+                            ul.menu-left.js-menu-hover
+                                li.active.js-left-menu-hover(data-tab='1')
+                                    a(href='#' ) Студенту
+                                li.js-left-menu-hover(data-tab='2')
+                                    a(href='#' ) Магистранту
+                                li.js-left-menu-hover(data-tab='3')
+                                    a(href='#' ) Слушателю
+                                li.js-left-menu-hover(data-tab='4')
+                                    a(href='#' ) Аспиранту
+                                li.js-left-menu-hover(data-tab='5')
+                                    a(href='#' ) Дистанционное образование
+                            .wrapp_content(data-tab-content='1').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Расписание занятий
+                                        li
+                                            a.topAnchorLink(href='#') Расписание экзаменов
+                                        li
+                                            a.topAnchorLink(href='#') График ликвидации академических задолженностей
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Учебные программы
+                                        li
+                                            a.topAnchorLink(href='#') Практика
+                                        li
+                                            a.topAnchorLink(href='#') Итоговая аттестация
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Заочникам
+                                        li
+                                            a.topAnchorLink(href='#') Оплата за обучение
+                                        li
+                                            a.topAnchorLink(href='#') Общежитие
+                                        li
+                                            a.topAnchorLink(href='#') Распределение
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='2').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Расписание занятий
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Практика
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Аттетстация
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Оплата за обучение
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') График ликвидации академической разницы
+                                        li
+                                            a.topAnchorLink.topAnchorLink(href='#') Снижение оплаты за обучение
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='3').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Расписание занятий
+                                        li
+                                            a.topAnchorLink(href='#') Расписание итоговой аттестации
+                                        li
+                                            a.topAnchorLink(href='#') Самостоятельная работа
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+                            .wrapp_content(data-tab-content='4').js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Расписание занятий
+                                        li
+                                            a.topAnchorLink(href='#') Расписание экзаменов
+                                        li
+                                            a.topAnchorLink(href='#') Критерии и график аттестации
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Вопросы к кандидатским экзаменам и зачетам
+                                        li
+                                            a.topAnchorLink(href='#') Выпускникам
+                                .wrapper-second-header_personal-area
+                                    a.link-personal-area(href='personal-area.html')
+                                        span.link-personal-area_icon
+                                            <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                            <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                            <g>
+                                            <g id="svg_1">
+                                            <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                            <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                            </g>
+                                            </g>
+                                            </svg>
+                                        span.link-personal-area_link Кабинет абитуриента
+
+
+
+                    .menu_categories-content.js-menu-category-content-item(data-index='3')
+                        .menu_categories-content-header
+                            .wrapp_content.js-menu-item-hover
+                                .menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='history.html') История
+                                        li
+                                            a.topAnchorLink(href='#') Научная деятельность
+                                        li
+                                            a.topAnchorLink(href='#') Инновационные площадки
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Идеологическая и воспитательная работа
+                                        li
+                                            a.topAnchorLink(href='#') Общественная жизнь
+                                        li
+                                            a.topAnchorLink(href='rectorate.html') Ректорат
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='teaching-staff.html') Преподавательский состав
+                                        li
+                                            a.topAnchorLink(href='#') Структура
+                                        li
+                                            a.topAnchorLink(href='#') Достижения Академии
+
+
+
+                    .menu_categories-content.js-menu-category-content-item(data-index='4')
+                        .menu_categories-content-header
+                            .wrapp_content.js-menu-item-hover
+                                .menu-center.small-menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Спортивный комплекс
+                                        li
+                                            a.topAnchorLink(href='#') Жилищный комплекс
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Редакционно-издательский центр
+                                        li
+                                            a.topAnchorLink(href='#') Торговый комплекс
+
+                    .menu_categories-content.js-menu-category-content-item(data-index='5')
+                        .menu_categories-content-header
+                            .wrapp_content.js-menu-item-hover
+                                .menu-center.small-menu-center
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Анонсы
+                                        li
+                                            a.topAnchorLink(href='#') Новости
+                                        li
+                                            a.topAnchorLink(href='#') Календарь наших мероприятий
+                                    ul.menu-center_list
+                                        li
+                                            a.topAnchorLink(href='#') Конференции
+                                        li
+                                            a.topAnchorLink(href='#') Другое
+

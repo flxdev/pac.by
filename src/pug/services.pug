@@ -1,0 +1,156 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg-services.png')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title Услуги академии
+                        .bread-crumbs
+                            a(href='#') Главная
+                            span Услуги
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .wrapper_row-nav
+                                ul
+                                    li
+                                        a(href='#').active Спортивный комплекс
+                                    li
+                                        a(href='#') Жилищный комплекс
+                                    li
+                                        a(href='#') Редакционно-издательский центр
+                                    li
+                                        a(href='#') Торговый комплекс
+                        .content-row-wrapper_row-txt
+                            .wrapper_row-services
+                                .wrapper_row-title Академия предоставяет перечень платных услуг для студентов, жителей, на также гостей столицы Республики Беларусь.
+                                p.small-p Мы осуществляем свою деятельность в порядке и в пределах, определенных действующим законодательством Республики Беларусь, Уставом Академии управления, Положением о Центре, лицензией на право осуществления розничной торговли и предоставления услуг, выданной Минским городским исполнительным комитетом, а также на основании приказов, правил внутреннего трудового распорядка, коллективного договора и других локальных нормативных правовых и организационно-распорядительных актов Академии управления.
+                                .wrapper_row-services-list-link.revealator-zoomin.revealator-once
+                                    a(href='#' style="background-image:url('img/condition/dop-condition-1.png')").services-link
+                                        .services-link-box
+                                            .services-link-name(style="color:#0a3c90") Спортивный комплекс
+                                            .services-link-dop Более 20 видов спорта
+                                    a(href='#' style="background-image:url('img/condition/dop-condition-2.png')").services-link
+                                        .services-link-box
+                                            .services-link-name(style="color:#501e6f") Жилищный комплекс
+                                            .services-link-dop В составе 3 общежития
+                                    a(href='#' style="background-image:url('img/condition/dop-condition-3.png')").services-link
+                                        .services-link-box
+                                            .services-link-name(style='color: #77184f') Редакционно- <br> издательский центр
+                                            .services-link-dop Любые виды полиграфии
+                                    a(href='#' style="background-image:url('img/condition/dop-condition-4.png')").services-link
+                                        .services-link-box
+                                            .services-link-name(style="color: #0aa775") Торговый комплекс
+                                            .services-link-dop Столовая, бар, киоск
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further.revealator-zoomin.revealator-once
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link новости и события академии
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

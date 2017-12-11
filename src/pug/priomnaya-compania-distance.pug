@@ -1,0 +1,228 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="content-page")
+            section.container-wrapper-second-header
+                .block-img(style="background-image:url('img/bg-header/bg-incoming.jpg')")
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang(tabindex="1") Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                #block-gos-site.wrapper-gos-site(tabindex="1")
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='#')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .block-wrapper-title
+                    .block-wrapper-title_title-bread-crumbs
+                        h1.title Приёмная кампания
+                        .bread-crumbs
+                            a(href='#') Главная
+                            span Приёмная кампания
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .content-row-wrapper
+                        .content-row-wrapper_row-menu
+                            .wrapper_row-nav
+                                ul
+                                    li
+                                        a(href='#').active Абитуриенту
+                                            span.icon-arrow
+                                                <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                                <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                                <g>
+                                                <g id="svg_1">
+                                                <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                                </g>
+                                                </g>
+                                                </svg>
+                                        .wrapper-accordion-nav
+                                            a(href='#').wrapper-accordion-nav_link Нормативные документы
+                                            a(href='#').wrapper-accordion-nav_link Вступительная кампания
+                                            a(href='#').wrapper-accordion-nav_link Специальности и программы обучения
+                                            a(href='#').wrapper-accordion-nav_link Стоимость обучения
+                                            a(href='#').wrapper-accordion-nav_link Иностранному абитуриенту
+                                            a(href='#').wrapper-accordion-nav_link Подготовительные курсы
+                                            a(href='#').wrapper-accordion-nav_link Централизованное тестирование
+                                            a(href='#').wrapper-accordion-nav_link Общежитие
+                                    li
+                                        a(href='#') Магистранту
+                                    li
+                                        a(href='#') Слушателю
+                                    li
+                                        a(href='#') Аспиранту
+                                    li
+                                        a(href='#') Повышение квалификации
+                        .content-row-wrapper_row-txt
+                            .wrapper_row-incoming
+                                .container-link-btn.btn-p-c
+                                    a(href="#").box-link-btn.active
+                                        span Дневная бюджетная форма обучения
+                                    a(href="#").box-link-btn
+                                        span Дневная платная форма обучения
+                                    a(href="#").box-link-btn
+                                        span Заочная форма обучения
+                                .container-title
+                                    .h3 Информация о ходе приёма документов
+                                .container-priomnaya-comp-info
+                                    .box-update
+                                        .box-update_title По состоянию на
+                                        .box-update_time 12:00
+                                        .box-update_data 26.09.2017
+
+                                    .box-priomnaya-comp-info
+                                        .block-list-info
+                                            .block-list-info_title Форма получения образования
+                                            .block-list-info_txt дневная
+
+                                        .block-list-info
+                                            .block-list-info_title Приём осуществляется
+                                            .block-list-info_txt на полный срок
+
+                                        .block-list-info
+                                            .block-list-info_title Форма приёма
+                                            .block-list-info_txt на платной основе
+
+                                .container-priomnaya-comp-table
+                                    .wrapper-priomnaya-comp-table
+                                        // если фиксировать не надо в таблице, то не добавляем класс .FixedTables
+                                        // для фикс, мы для таблицы добавляем любое ID и data-col(это сколько столбцов фикс)
+                                        table.table_inner.FixedTables#t3(data-col="1")
+                                            thead
+                                                // header-td
+                                                tr
+                                                    td.header-td(rowspan="4") Факультет управления, специальность
+                                                    td.header-td(rowspan="4") План<br>приёма
+                                                    td.header-td(colspan="5") Подано заявлений от абитуриентов
+                                                tr
+                                                    td.header-td(rowspan="3") ВСЕГО
+                                                    td.header-td(colspan="4") в том числе
+                                                tr
+                                                    td.header-td(rowspan="2") Дипломы с отличием
+                                                    td.header-td(colspan="3") Средний балл документа о высшем образовании (документов, подтверждающих <br> освоение содержания образовательных программ высшего образования)
+                                                tr
+                                                    td.header-td Более 8 баллов
+                                                    td.header-td Более 6 баллов,<br> но не более 8 баллов
+                                                    td.header-td До 6 баллов
+
+                                            tbody
+                                                tr
+                                                    td Государственное управление и право
+                                                    td 360
+                                                    td 825
+                                                    td 56
+                                                    td 99
+                                                    td 474
+                                                    td 196
+
+                                                tr
+                                                    td Государственное управление и экономика
+                                                    td 360
+                                                    td 795
+                                                    td 55
+                                                    td 104
+                                                    td 371
+                                                    td 265
+
+
+
+            section.container-wrapper-content.grey
+                a(href='#').box-big-link
+                    .block-wrapper-content
+                        .wrapper-look-further.revealator-zoomin.revealator-once
+                            .wrapper-look-further_txt Смотрите далее:
+                            .wrapper-look-further_link магистратура академии управления
+            section.container-wrapper-content
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+                            .wrapper-interview_block-check
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1')
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2')
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3')
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4')
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

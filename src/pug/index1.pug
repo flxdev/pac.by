@@ -1,0 +1,265 @@
+extends _layout
+
+block title
+    title Title of template
+
+
+block content
+    main#barba-wrapper
+        section.barba-container(data-namespace="home-page")
+            section.container-wrapper-second-header
+                .block-video.hidden-xs
+                    .sticky.homepage-hero-module
+                        .video-container
+                            video#video.fillWidth(autoplay='autoplay' loop="loop" preload='auto' muted="muted")
+                                source(src='video/video1.mp4')
+                // todo добавить этот блок. Он заменяет видео на бэкграйнд в ie9
+                .block-ie(style="background-image:url('img/bg-header/bg1.png')")
+                //.block-gradient
+                .block-second-header.hidden-xs
+                    .wrapper-second-header
+                        .wrapper-second-header_lang
+                            #block-lang.block-dropdown_lang Ru
+                                ul.dropdown
+                                    li
+                                        a(href='#') En
+                        .wrapper-second-header_link
+                            include includes/_social
+                            .block-gos-site
+                                .wrapper-gos-site
+                                    .wrapper-gos-site_title
+                                        img.gos-site-logo(src='img/gos-site.png')
+                                        span Государственные сайты
+                                    ul.dropdown
+                                        li
+                                            a(href='#') Президент Республики Беларусь
+                                        li
+                                            a(href='#') Совет Министров
+                                        li
+                                            a(href='#') Совет Республики Беларусь
+                                        li
+                                            a(href='#') Национальное собрание Республики Беларусь
+                            .wrapper-second-header_personal-area
+                                a.link-personal-area(href='javascript:;' data-fancybox data-src='#hidden-content-e-s')
+                                    span.link-personal-area_icon
+                                        <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                        <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                        <g>
+                                        <g id="svg_1">
+                                        <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                        <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                        </g>
+                                        </g>
+                                        </svg>
+                                    span.link-personal-area_link Кабинет абитуриента
+                .container-wrapper-title.bg-overflow
+                    .block-wrapper-title.box-header-index
+                        //h1.title Мы даём знания для эффективного управления
+                        include includes/_slider-header
+                        .block-mobile-nav
+                           a.block-mobile-nav-link(href='incoming.html#incoming') Поступающим
+                               span.icon-arrow
+                                   <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                   <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                   <g>
+                                   <g id="svg_1">
+                                   <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                   </g>
+                                   </g>
+                                   </svg>
+                           a.block-mobile-nav-link(href='entrant.html') Обучающимся
+                               span.icon-arrow
+                                   <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                   <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                   <g>
+                                   <g id="svg_1">
+                                   <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                   </g>
+                                   </g>
+                                   </svg>
+                           a.block-mobile-nav-link(href='about.html') Академия
+                               span.icon-arrow
+                                   <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                   <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                   <g>
+                                   <g id="svg_1">
+                                   <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                   </g>
+                                   </g>
+                                   </svg>
+                           a.block-mobile-nav-link(href='javascript:;' data-fancybox data-src='#hidden-content-e-s')
+                               span.link-personal-area_icon
+                                   <svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+                                   <style type="text/css">.st0{fill:#a5a8b0;}</style>
+                                   <g>
+                                   <g id="svg_1">
+                                   <circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+                                   <path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+                                   </g>
+                                   </g>
+                                   </svg>
+                               span.link-personal-area_link Кабинет абитуриента
+                               span.icon-arrow
+                                   <svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg">
+                                   <style type="text/css">.st0{fill:#0A3C90;}</style>
+                                   <g>
+                                   <g id="svg_1">
+                                   <polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0"/>
+                                   </g>
+                                   </g>
+                                   </svg>
+                    .block-wrapper-title_slicky
+                        include includes/_new-slicky
+                    .block-wrapper-title.tab-news
+                        include includes/_tab-header
+                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+            section.container-wrapper-content
+                .block-wrapper-content.width-b
+                    .wrapper-admission-campaign.revealator-zoomin.revealator-once
+                        .wrapper-admission-campaign_block
+                            .title Приёмная кампания 2017
+                            p.txt Отвечаем на вопросы обучения и поступления в Академию управления
+                        .wrapper-admission-campaign_block.box-list
+                            .wrapper-admission-campaign_list
+                                .wrapper-admission-campaign_list-block
+                                    a(href='#').wrapper-admission-campaign_list-block_link Подготовка на базе среднего образования
+                                .wrapper-admission-campaign_list-block
+                                    a(href='#').wrapper-admission-campaign_list-block_link Подготовка на базе высшего образования
+                                .wrapper-admission-campaign_list-block
+                                    a(href='#').wrapper-admission-campaign_list-block_link Подготовка в соответствии с государственным заказом
+                                .wrapper-admission-campaign_list-block
+                                    a(href='#').wrapper-admission-campaign_list-block_link Магистратура
+                        .wrapper-admission-campaign_btn
+                            .wrapper-admission-campaign_btn-skype Прямая линия
+                            .wrapper-admission-campaign_btn-t Подготовка к Цт
+                .block-wrapper-content
+                    .wrapper-additional-services.revealator-zoomin.revealator-once
+                        .wrapper-admission-campaign_text
+                            .wrapper-admission-campaign_text_title
+                                .title дополнительные Услуги
+                            .wrapper-admission-campaign_text_p Академия управления обладаем масштабным материальным фондом и способна обеспечить дополнительными услугами как своих студентов слушателей и магистрантов, так и людей, живущих неподалёку.
+                        .wrapper-admission-campaign_slider
+                            .wrapper-admission-campaign_slider-swiper
+                                .swiper-wrapper
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-1.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style="color:#0a3c90") Спортивный комплекс
+                                            .services-link-dop Более 20 видов спортаs
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-2.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style="color:#501e6f") Жилищный комплекс
+                                            .services-link-dop В составе 3 общежития
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-3.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style='color: #77184f') Редакционно- <br> издательский центр
+                                            .services-link-dop Любые виды полиграфии
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-1.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style="color:#0a3c90") Спортивный комплекс
+                                            .services-link-dop Более 20 видов спортаs
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-2.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style="color:#501e6f") Жилищный комплекс
+                                            .services-link-dop В составе 3 общежития
+                                    a(href='#').swiper-slide
+                                        img(src='img/condition/dop-condition-3.png' alt='')
+                                        .services-link-box
+                                            .services-link-name(style='color: #77184f') Редакционно- <br> издательский центр
+                                            .services-link-dop Любые виды полиграфии
+                                .swiper-button-next
+                                .swiper-button-prev
+                                .admission-campaign_slider-link
+                                    a(href='#') Перейти ко всем услугам
+                    .wrapper-about-university.revealator-zoomin.revealator-once
+                        .title об академии управления
+                        .wrapper-about-university_avatar-text
+                            .wrapper-about-university_avatar-img
+                                img(src='img/avatar/avatar-1.png' alt='')
+                            .wrapper-about-university-name-position
+                                .wrapper-about-university-name Жилинский Марат Геннадьевич
+                                .wrapper-about-university-position Ректор, кандидат исторических наук, доцент.
+                        .wrapper-about-university_text
+                            .block-direct-speech Академия является ведущим государственным учреждением высшего образования в системе подготовки, переподготовки и повышения квалификации специалистов и руководящих кадров.
+                                span.icon-direct-speech
+                            .wrapper-about-university_text-s В Академии управления созданы условия для обеспечения непрерывного образования управленческих кадров.
+                            a.link-about-university(href='#') Подробнее об Академии
+                        .wrapper-about-university_info
+                            .wrapper-about-university_info-list
+                                .wrapper-about-university_info-list_number.number-counter 26
+                                .wrapper-about-university_info-list_txt Лет Академии
+                            .wrapper-about-university_info-list
+                                .wrapper-about-university_info-list_number.number-counter 5
+                                .wrapper-about-university_info-list_txt Факультетов
+                            .wrapper-about-university_info-list
+                                .wrapper-about-university_info-list_number.number-counter 15
+                                .wrapper-about-university_info-list_txt Кафедр
+                            .wrapper-about-university_info-list
+                                .wrapper-about-university_info-list_number.number-counter 9000
+                                .wrapper-about-university_info-list_txt Студентов ежегодно
+
+            section.container-wrapper-content.grey
+                .block-wrapper-content
+                    .wrapper-interview-s-n.revealator-zoomin.revealator-once
+                        form.wrapper-interview.js-form
+                            .wrapper-interview_title Опросы
+                            .wrapper-interview_q Чем привлекло Вас обучение в Академии управления?
+                            .wrapper-interview_block-check.form-group
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-1' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                        label(for='radio-interview-s-n-1') Высокий статус вуза
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-2' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                        label(for ='radio-interview-s-n-2') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-3' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                        label(for ='radio-interview-s-n-3') Качество образования
+                                        .block-bg-input
+                                .block-check
+                                    .block-check-inline
+                                        input(type='radio' name='search' id ='radio-interview-s-n-4' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                        .block-bg-input
+                            .wrapper-interview_btn
+                                button Ответить
+                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                        .wrapper-s-n
+                            .wrapper-interview_title Академия управления <br> в социальных сетях
+                            .wrapper-s-n_tab
+                                ul.tabs-s
+                                    li.tab-link(data-tabs="tabs-1") facebook
+                                    li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+                                    li.tab-link(data-tabs="tabs-3") instagram
+                                #tabs-1.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-2.tab-content-s.current-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                                #tabs-3.tab-content-s
+                                    .wrapper-tab-content
+                                        img(src='img/img-soc-plug.png' alt='')
+                    .wrapper-banners.revealator-zoomin.revealator-once
+                        ul
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-1.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-2.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-3.png' alt='')
+                            li
+                                a(href='#')
+                                    img(src='img/baner/baner-4.png' alt='')
+

@@ -1,0 +1,99 @@
+#hidden-content-f.w-p(style='display: none;')
+    .wrapper-popup
+        .three-title-popup обратная связь
+        form.js-form
+            .wrapper-form
+                .block-label-input
+                    .block-label
+                        label Имя<span>*</span>
+                    .block-input
+                        input(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label E-mail<span>*</span>
+                    .block-input
+                        input(type='email' data-validation="email required" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Телефон<span>*</span>
+                    .block-input
+                        input(type='tel' data-validation="custom" data-validation-regexp="(([0-9-]+)).{7,}" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Категория вопроса<span>*</span>
+                    .block-input
+                        .wrapper-teaching-staff_select
+                            .wrapper-teaching-staff_select-select.form-group
+                                select.select2.select-popup(style="width: 100%" name="foodType" data-validation="required" data-validation-error-msg="Поле обязательно для заполнения" data-placeholder="Выберите вопрос")
+                                    option(value='')
+                                    option(value='Вопрос 1') Вопрос 1
+                                    option(value='Вопрос 2') Вопрос 2
+                                    option(value='Вопрос 3') Вопрос 3
+                                    option(value='Вопрос 4') Вопрос 4
+                                    option(value='Вопрос 5') Вопрос 5
+                                    option(value='Вопрос 6') Вопрос 6
+                                    option(value='Вопрос 6') Вопрос 6
+
+                .block-label-input
+                    .block-label
+                        label Вопрос<span>*</span>
+                    .block-input
+                        textarea(data-validation="custom required" type="text" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-btn-form
+                    button.btn-form Отправить
+    // Modal Window
+    .wrapper-popup.response
+        .three-title-popup Благодарим вас!
+        p Форма обратной связи успешно отправлена. С вами свяжутся в ближайшее время!
+        .btn-close-c
+            span Закрыть
+
+
+#hidden-content-q.w-p(style='display: none;')
+    .wrapper-popup
+        .three-title-popup Вопрос ректору
+        form.js-form
+            .wrapper-form
+                .block-label-input
+                    .block-label
+                        label Имя<span>*</span>
+                    .block-input
+                        input(data-validation="length  required" type="text" data-validation-length='min3' data-validation-error-msg="Поле обязательно для заполнения").input-box
+                .block-label-input
+                    .block-label
+                        label E-mail<span>*</span>
+                    .block-input
+                        input(type='email' data-validation="email required" data-validation-error-msg="Поле обязательно для заполнения")
+                .block-label-input
+                    .block-label
+                        label Телефон<span>*</span>
+                    .block-input
+                        input(type="tel" data-validation="custom" data-validation-regexp="^[-0-9()+ ]+$" data-validation-error-msg="Поле обязательно для заполнения").input-box
+                .block-label-input
+                    .block-label
+                        label Категория вопроса<span>*</span>
+                    .block-input
+                        .wrapper-teaching-staff_select
+                            .wrapper-teaching-staff_select-select
+                                select.select2.select-popup(style="width: 100%" data-validation="required" data-validation-error-msg="Поле обязательно для заполнения")
+                                    option(value='Вопрос 1') Вопрос 1
+                                    option(value='Вопрос 2') Вопрос 2
+                                    option(value='Вопрос 3') Вопрос 3
+                                    option(value='Вопрос 4') Вопрос 4
+                                    option(value='Вопрос 5') Вопрос 5
+                                    option(value='Вопрос 6') Вопрос 6
+                .block-label-input
+                    .block-label
+                        label Вопрос<span>*</span>
+                    .block-input
+                        textarea(data-validation="length  required" data-validation-length='min3' data-validation-error-msg="Поле обязательно для заполнения").input-box
+                .block-btn-form
+                    button.btn-form Спросить
+
+    // Modal Window
+    .wrapper-popup.response
+        .three-title-popup Благодарим вас!
+        p Вопрос отправлен!
+        .btn-close-c
+            span Закрыть
+
