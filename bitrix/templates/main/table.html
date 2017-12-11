@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jade Layout Template</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta content="IE=9" http-equiv="X-UA-Compatible">
+    <meta name="format-detection" content="telephone=no">
+  </head>
+  <body>
+    <style type="text/css">
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5,
+      h6, p, blockquote, pre, a, abbr, acronym, address, big,
+      cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small,
+      strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+      dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+      tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
+      embed, figure, figcaption, footer, header, hgroup, menu, nav,
+      output, ruby, section, summary, time, mark, audio, video{
+          margin: 0;
+          padding: 0;
+          border: 0;
+          font: inherit;
+          vertical-align: baseline;
+          font-size: 100%;
+      }
+      
+      *, :after, :before {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+      }
+      
+      body, html{
+          height: 100%;
+          margin: 0;
+      }
+      
+      img, fieldset, a img{
+          border: none
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      textarea{
+          -webkit-appearance: none
+      }
+      
+      textarea{
+          overflow: auto
+      }
+      
+      input, button{
+          margin: 0;
+          padding: 0;
+          border: 0;
+      }
+      
+      input[type="submit"], button{
+          cursor: pointer;
+      }
+      div, input, textarea, select, button,
+      h1, h2, h3, h4, h5, h6, a, span, a:focus{
+          outline: none;
+      }
+      
+      ul, ol{
+          list-style-type: none;
+      }
+      
+      
+      /**/
+      /*+ iphone*/
+      /*-webkit-text-size-adjust: none*/
+      table{
+          border-spacing: 0;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      /*box-sizing model reset*/
+      .container-priomnaya-comp-info {
+          font-size: 0;
+          margin-top: 25px;
+          margin-bottom: 45px;
+      }
+      
+      .container-priomnaya-comp-info .box-update {
+          display: inline-block;
+          vertical-align: top;
+          width: 240px;
+          background: #e0f2ff;
+          background: -webkit-linear-gradient(-60deg, #e0f2ff, #fff7fc);
+          background: -webkit-linear-gradient(330deg, #e0f2ff, #fff7fc);
+          background: linear-gradient(120deg, #e0f2ff, #fff7fc);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e0f2ff", endColorstr="#fff7fc", GradientType=1);
+          padding: 15px 22px;
+      }
+      
+      .container-priomnaya-comp-info .box-update .box-update_title {
+          font-family: Open Sans, sans-serif;
+          font-weight: 300;
+          font-size: 15px;
+          color: #141e2d;
+          margin-bottom: 10px;
+      }
+      
+      .container-priomnaya-comp-info .box-update .box-update_time {
+          font-family: BigCityGrotesquePro;
+          font-size: 50px;
+          color: #0a3c90;
+          line-height: 1;
+          margin-bottom: 9px;
+      }
+      
+      .container-priomnaya-comp-info .box-update .box-update_data {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #141e2d;
+          margin-bottom: 8px;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info {
+          display: inline-block;
+          vertical-align: top;
+          font-size: 0;
+          width: 65%;
+          margin-left: 7%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info {
+          display: inline-block;
+          vertical-align: top;
+          width: 33%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_title {
+          font-family: Open Sans, sans-serif;
+          font-weight: 300;
+          font-size: 15px;
+          color: #404854;
+          padding-right: 13%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_txt {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #404854;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info {
+          display: inline-block;
+          vertical-align: top;
+          width: 33%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_title {
+          font-family: Open Sans, sans-serif;
+          font-weight: 300;
+          font-size: 15px;
+          color: #404854;
+          padding-right: 13%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_txt {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #404854;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info {
+          display: inline-block;
+          vertical-align: top;
+          width: 33%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_title {
+          font-family: Open Sans, sans-serif;
+          font-weight: 300;
+          font-size: 15px;
+          color: #404854;
+          padding-right: 13%;
+      }
+      
+      .container-priomnaya-comp-info .box-priomnaya-comp-info .block-list-info .block-list-info_txt {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #404854;
+      }
+      
+      .container-priomnaya-comp-table {
+          width: 100%;
+          position: relative;
+          margin-bottom: 20px;
+      }
+      
+      .container-priomnaya-comp-table .wrapper-priomnaya-comp-table {
+          overflow-x: auto;
+          padding-bottom: 25px;
+      }
+      
+      table {
+          border-spacing: 0;
+          border-collapse: collapse;
+          width: 100%;
+      }
+      
+      .container-priomnaya-comp-table .table_inner {
+          border-collapse: collapse;
+          empty-cells: show;
+          table-layout: fixed;
+          border-bottom: 2px solid #b4c2d8;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-head {
+          display: table-row-group;
+          vertical-align: top;
+          border-color: inherit;
+          border-bottom: 2px solid #b4c2d8;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-head .block-inner {
+          font-family: Open Sans, sans-serif;
+          font-weight: 300;
+          font-size: 13px;
+          color: #404854;
+          width: 80px;
+          text-align: left;
+          padding: 20px 7px 20px 0;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-head .block-inner:first-child {
+          width: 270px;
+          min-width: 270px;
+          max-width: 270px;
+          text-align: left;
+          position: absolute;
+          top: auto;
+          left: 0;
+          height: 75px;
+          background: #fff;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-head .block-inner:first-child:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          -webkit-box-shadow: 3px 0 17px 0 #323232;
+          box-shadow: 3px 0 17px 0 #323232;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .block-inner.clone-block-inner {
+          width: 270px;
+          min-width: 270px;
+          max-width: 270px;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .compare-row .block-inner.bold-head {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 13px;
+          color: #404854;
+          width: 100px;
+          max-width: 100px;
+          min-width: 100px;
+          padding: 0 25px;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-body {
+          display: table-row-group;
+          vertical-align: middle;
+          border-color: inherit;
+          border-bottom: none;
+          border-bottom: 1px solid #c7d2e2;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-body .block-inner {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #404854;
+          padding: 13px 10px;
+          vertical-align: middle;
+          width: 80px;
+          text-align: left;
+          padding-right: 7px;
+          height: 70px;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-body .block-inner:first-child {
+          font-family: Open Sans, sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          color: #404854;
+          width: 270px;
+          min-width: 270px;
+          max-width: 270px;
+          position: absolute;
+          top: auto;
+          left: 0;
+          background: #fff;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .compare-row .block-inner.title-body {
+          font-family: Open Sans, sans-serif;
+          font-weight: 600;
+          font-size: 15px;
+          color: #0a3c90;
+          padding: 30px 15px 15px 8px;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-body .block-inner:first-child:after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 1px;
+          height: 100%;
+          -webkit-box-shadow: 3px 0 17px 0 #323232;
+          box-shadow: 3px 0 17px 0 #323232;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .block-inner.clone-block-inner {
+          width: 270px;
+          min-width: 270px;
+          max-width: 270px;
+      }
+      
+      .container-priomnaya-comp-table .table_inner .table-body .compare-row:nth-child(2n), .container-priomnaya-comp-table .table_inner .table-body .compare-row:nth-child(2n) .block-inner {
+          background: #fafafa;
+      }
+      
+      @-moz-document url-prefix() {
+          .container-priomnaya-comp-table .table_inner .table-head .block-inner:first-child{
+              top: 8px;
+          }
+      }
+      
+    </style>
+    <!-- Content-->
+    <div class="container-priomnaya-comp-info">
+      <div class="box-update">
+        <div class="box-update_title">Последнее обновление</div>
+        <div class="box-update_time">15:00</div>
+        <div class="box-update_data">2 августа 2017</div>
+      </div>
+      <div class="box-priomnaya-comp-info">
+        <div class="block-list-info">
+          <div class="block-list-info_title">Форма получения образования</div>
+          <div class="block-list-info_txt">дневная</div>
+        </div>
+        <div class="block-list-info">
+          <div class="block-list-info_title">Приём осуществляется</div>
+          <div class="block-list-info_txt">на полный срок</div>
+        </div>
+        <div class="block-list-info">
+          <div class="block-list-info_title">Форма приёма</div>
+          <div class="block-list-info_txt">на бюджетной основе</div>
+        </div>
+      </div>
+    </div>
+    <div class="container-priomnaya-comp-table">
+      <div class="wrapper-priomnaya-comp-table">
+        <table class="table_inner">
+          <thead class="table-head">
+            <tr class="compare-row">
+              <th class="block-inner">Факультет и специальность</th>
+              <th class="block-inner clone-block-inner"></th>
+              <th class="block-inner bold-head">Конкурс</th>
+              <th class="block-inner">План приёма</th>
+              <th class="block-inner">Всего подано</th>
+              <th class="block-inner">Без экзаменов</th>
+              <th class="block-inner">Вне конкурса</th>
+              <th class="block-inner">По конкурсу</th>
+              <th class="block-inner">110–119 баллов</th>
+              <th class="block-inner">140–119 баллов</th>
+              <th class="block-inner">170–119 баллов</th>
+              <th class="block-inner">110–119 баллов</th>
+              <th class="block-inner">110–119 баллов</th>
+              <th class="block-inner">140–119 баллов</th>
+              <th class="block-inner">170–119 баллов</th>
+              <th class="block-inner">110–119 баллов</th>
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr class="compare-row">
+              <td class="block-inner title-body">Управления</td>
+              <td class="block-inner clone-block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+            </tr>
+            <tr class="compare-row">
+              <td class="block-inner">Государственное управление и право</td>
+              <td class="block-inner clone-block-inner"></td>
+              <td class="block-inner bold-body">1,16</td>
+              <td class="block-inner">58</td>
+              <td class="block-inner">67</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">67</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+            </tr>
+            <tr class="compare-row">
+              <td class="block-inner">Государственное управление и экономика</td>
+              <td class="block-inner clone-block-inner"></td>
+              <td class="block-inner bold-body">1,4</td>
+              <td class="block-inner">5</td>
+              <td class="block-inner">7</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+            </tr>
+          </tbody>
+          <tbody class="table-body">
+            <tr class="compare-row">
+              <td class="block-inner title-body">Инновационной подготовки</td>
+              <td class="block-inner clone-block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+              <td class="block-inner"></td>
+            </tr>
+            <tr class="compare-row">
+              <td class="block-inner">Управление информационными ресурсами</td>
+              <td class="block-inner clone-block-inner"></td>
+              <td class="block-inner bold-body">1,03</td>
+              <td class="block-inner">32</td>
+              <td class="block-inner">33</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">0</td>
+              <td class="block-inner">33</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">1</td>
+              <td class="block-inner">-</td>
+              <td class="block-inner">-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+  </body>
+</html>
