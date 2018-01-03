@@ -1,3 +1,5 @@
+'use strict';
+
 /*!
 	Autosize v1.18.9 - 2014-05-27
 	Automatically adjust textarea height based on user input.
@@ -5,8 +7,7 @@
 	license: http://www.opensource.org/licenses/mit-license.php
 */
 (function ($) {
-	var
-	defaults = {
+	var defaults = {
 		className: 'autosizejs',
 		id: 'autosizejs',
 		append: '\n',
@@ -15,23 +16,18 @@
 		placeholder: true
 	},
 
+
 	// border:0 is unnecessary, but avoids a bug in Firefox on OSX
 	copy = '<textarea tabindex="-1" style="position:absolute; top:-999px; left:0; right:auto; bottom:auto; border:0; padding: 0; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box; word-wrap:break-word; height:0 !important; min-height:0 !important; overflow:hidden; transition:none; -webkit-transition:none; -moz-transition:none;"/>',
 
+
 	// line-height is conditionally included because IE7/IE8/old Opera do not return the correct value.
-	typographyStyles = [
-		'fontFamily',
-		'fontSize',
-		'fontWeight',
-		'fontStyle',
-		'letterSpacing',
-		'textTransform',
-		'wordSpacing',
-		'textIndent'
-	],
+	typographyStyles = ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing', 'textTransform', 'wordSpacing', 'textIndent'],
+
 
 	// to keep track which textarea is being mirrored when adjust() is called.
 	mirrored,
+
 
 	// the mirror element, which is used to calculate what size the mirrored element should be.
 	mirror = $(copy).data('autosize', true)[0];
@@ -55,23 +51,22 @@
 		}
 
 		return this.each(function () {
-			var
-			ta = this,
-			$ta = $(ta),
-			maxHeight,
-			minHeight,
-			boxOffset = 0,
-			callback = $.isFunction(options.callback),
-			originalStyles = {
+			var ta = this,
+			    $ta = $(ta),
+			    maxHeight,
+			    minHeight,
+			    boxOffset = 0,
+			    callback = $.isFunction(options.callback),
+			    originalStyles = {
 				height: ta.style.height,
 				overflow: ta.style.overflow,
 				overflowY: ta.style.overflowY,
 				wordWrap: ta.style.wordWrap,
 				resize: ta.style.resize
 			},
-			timeout,
-			width = $ta.width(),
-			taResize = $ta.css('resize');
+			    timeout,
+			    width = $ta.width(),
+			    taResize = $ta.css('resize');
 
 			if ($ta.data('autosize')) {
 				// exit if autosize has already been applied, or if the textarea is the mirror element.
@@ -79,7 +74,7 @@
 			}
 			$ta.data('autosize', true);
 
-			if ($ta.css('box-sizing') === 'border-box' || $ta.css('-moz-box-sizing') === 'border-box' || $ta.css('-webkit-box-sizing') === 'border-box'){
+			if ($ta.css('box-sizing') === 'border-box' || $ta.css('-moz-box-sizing') === 'border-box' || $ta.css('-webkit-box-sizing') === 'border-box') {
 				boxOffset = $ta.outerHeight() - $ta.height();
 			}
 
@@ -93,7 +88,7 @@
 			});
 
 			if (taResize === 'vertical') {
-				$ta.css('resize','none');
+				$ta.css('resize', 'none');
 			} else if (taResize === 'both') {
 				$ta.css('resize', 'horizontal');
 			}
@@ -103,23 +98,23 @@
 			function setWidth() {
 				var width;
 				var style = window.getComputedStyle ? window.getComputedStyle(ta, null) : false;
-				
+
 				if (style) {
 
 					width = ta.getBoundingClientRect().width;
 
 					if (width === 0 || typeof width !== 'number') {
-						width = parseInt(style.width,10);
+						width = parseInt(style.width, 10);
 					}
 
-					$.each(['paddingLeft', 'paddingRight', 'borderLeftWidth', 'borderRightWidth'], function(i,val){
-						width -= parseInt(style[val],10);
+					$.each(['paddingLeft', 'paddingRight', 'borderLeftWidth', 'borderRightWidth'], function (i, val) {
+						width -= parseInt(style[val], 10);
 					});
 				} else {
 					width = $ta.width();
 				}
 
-				mirror.style.width = Math.max(width,0) + 'px';
+				mirror.style.width = Math.max(width, 0) + 'px';
 			}
 
 			function initMirror() {
@@ -135,10 +130,10 @@
 				// original textarea.  mirror always has a height of 0.
 				// This gives a cross-browser supported way getting the actual
 				// height of the text, through the scrollTop property.
-				$.each(typographyStyles, function(i,val){
+				$.each(typographyStyles, function (i, val) {
 					styles[val] = $ta.css(val);
 				});
-				
+
 				$(mirror).css(styles).attr('wrap', $ta.attr('wrap'));
 
 				setWidth();
@@ -175,7 +170,7 @@
 				}
 
 				mirror.style.overflowY = ta.style.overflowY;
-				original = parseInt(ta.style.height,10);
+				original = parseInt(ta.style.height, 10);
 
 				// Setting scrollTop to zero is needed in IE8 and lower for the next step to be accurately applied
 				mirror.scrollTop = 0;
@@ -200,21 +195,21 @@
 				if (original !== height) {
 					ta.style.height = height + 'px';
 					if (callback) {
-						options.callback.call(ta,ta);
+						options.callback.call(ta, ta);
 					}
 				}
 			}
 
-			function resize () {
+			function resize() {
 				clearTimeout(timeout);
-				timeout = setTimeout(function(){
+				timeout = setTimeout(function () {
 					var newWidth = $ta.width();
 
 					if (newWidth !== width) {
 						width = newWidth;
 						adjust();
 					}
-				}, parseInt(options.resizeDelay,10));
+				}, parseInt(options.resizeDelay, 10));
 			}
 
 			if ('onpropertychange' in ta) {
@@ -225,8 +220,8 @@
 					$ta.on('input.autosize keyup.autosize', adjust);
 				} else {
 					// IE7 / IE8
-					$ta.on('propertychange.autosize', function(){
-						if(event.propertyName === 'value'){
+					$ta.on('propertychange.autosize', function () {
+						if (event.propertyName === 'value') {
 							adjust();
 						}
 					});
@@ -249,24 +244,20 @@
 
 			// Event for manual triggering that also forces the styles to update as well.
 			// Should only be needed if one of typography styles of the textarea change, and the textarea is already the target of the adjust method.
-			$ta.on('autosize.resizeIncludeStyle', function() {
+			$ta.on('autosize.resizeIncludeStyle', function () {
 				mirrored = null;
 				adjust();
 			});
 
-			$ta.on('autosize.destroy', function(){
+			$ta.on('autosize.destroy', function () {
 				mirrored = null;
 				clearTimeout(timeout);
 				$(window).off('resize', resize);
-				$ta
-					.off('autosize')
-					.off('.autosize')
-					.css(originalStyles)
-					.removeData('autosize');
+				$ta.off('autosize').off('.autosize').css(originalStyles).removeData('autosize');
 			});
 
 			// Call adjust in case the textarea already contains text.
 			adjust();
 		});
 	};
-}(window.jQuery || window.$)); // jQuery or jQuery-like library, such as Zepto
+})(window.jQuery || window.$); // jQuery or jQuery-like library, such as Zepto

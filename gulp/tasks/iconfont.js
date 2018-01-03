@@ -4,7 +4,6 @@ var iconfont = require("gulp-iconfont");
 var consolidate = require("gulp-consolidate");
 var config = require('../config');
 var browserSync = require('browser-sync');
-reload = browserSync.reload;
 
 var fontname = 'svgfont';
 gulp.task('font', function(){
@@ -42,7 +41,7 @@ gulp.task('font', function(){
             .pipe(gulp.dest(config.dest.root));
     })
     .pipe(gulp.dest(config.dest.css+'fonts/'))
-    .pipe(reload({stream: true}))
+    .pipe(browserSync.reload({stream: true}))
     .pipe(notify("Icon font updated!"));
 });
 

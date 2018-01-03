@@ -1228,6 +1228,52 @@ if ($(window).width() < 931) {
     initAnhorHash();
 }
 
+class Accordion {
+	constructor(item, trig, hid){
+    this.items = {}
+    this.items.item = item
+	  this.items.$item = $(this.items.item)
+	  this.items.trigger = trig
+		this.items.hidden = hid
+    this.items.settings = {
+      height: 0,
+      currentHeight: 0,
+      active: false
+    }
+    this.items.trigger.on('click', (e) => this.toggleAccordion(e, this.items))
+	}
+	toggleAccordion(e, items){
+	    if (!items.settings.active){
+	        e.preventDefault()
+	        this.showItem(e, items)
+        console.log('show')
+      }
+      else{
+	        this.hideItem(e, items)
+        console.log('hide')
+      }
+  }
+  hideItem(e, items){
+	  this.removeItemClasses(e, items)
+    items.settings.active = false
+  }
+  showItem(e, items){
+	  this.addItemClasses(e, items)
+    items.settings.active = true
+  }
+  addItemClasses(e, items){
+    items.$item.addClass('active')
+	  items.trigger.addClass('active')
+	  items.hidden.addClass('active')
+  }
+  removeItemClasses(e, items){
+	  items.$item.removeClass('active')
+	  items.trigger.removeClass('active')
+	  items.hidden.removeClass('active')
+  }
+}
+
+
 // Video width
 $(document).ready(function () {
 
@@ -1240,10 +1286,23 @@ $(document).ready(function () {
 
     $(window).on('resize', function () {
         scaleVideoContainer();
-        scaleBannerVideoSize('.video-container .poster img');
+        scaleBannerVideoSize(".video-container .poster img");
         scaleBannerVideoSize('.video-container .filter');
         scaleBannerVideoSize('.video-container video');
     });
+
+    if ($('.js-accordion').length){
+        let accordionsArr = [];
+        $('.js-accordion').filter(function(key, item){
+            accordionsArr[key] = new Accordion(item, $(item).find('.js-acc-trigger'), $(item).find('.js-acc-hidden'))
+        })
+    }
+    if ($('.js-inner-accordion').length){
+        let innerAccordionsArr = [];
+        $('.js-inner-accordion').filter(function(key, item){
+            innerAccordionsArr[key] = new Accordion(item, $(item).find('.js-inner-acc-trigger'), $(item).find('.js-inner-acc-hidden'))
+        })
+    }
 
 });
 

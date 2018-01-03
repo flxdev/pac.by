@@ -1,3 +1,5 @@
+'use strict';
+
 /*
  Revealator jQuery Plugin
  Revealator is a jQuery-based plugin for adding effects to elements that enter the window. It's simple, and easy to use.
@@ -27,16 +29,15 @@
  SOFTWARE.
  */
 
-
 var Revealator = typeof Revealator !== 'undefined' ? Revealator : {};
 
 $(function () {
 	Revealator = $.extend({}, {
-		timer:           null,
-		busy:            false,
-		scroll_padding:  0,
+		timer: null,
+		busy: false,
+		scroll_padding: 0,
 		effects_padding: 0,
-		refresh:         function () {}
+		refresh: function refresh() {}
 	}, typeof Revealator !== 'undefined' ? Revealator : {});
 
 	Revealator.refresh = function () {
@@ -70,7 +71,7 @@ $(function () {
 				$body.removeClass('at-top').removeClass('at-bottom').removeClass('near-top').removeClass('near-bottom');
 			}
 		}
-		
+
 		$('*[class*="revealator"]').each(function () {
 			i++;
 			var element = this;
@@ -81,9 +82,9 @@ $(function () {
 			if (element_bounding.top > window_bottom && element_bounding.bottom > window_bottom) {
 				position_class = 'revealator-below';
 			} else if (element_bounding.top < window_bottom && element_bounding.bottom > window_bottom) {
-				position_class = 'revealator-partially-below'
+				position_class = 'revealator-partially-below';
 			} else if (element_bounding.top < window_top && element_bounding.bottom > window_top) {
-				position_class = 'revealator-partially-above'
+				position_class = 'revealator-partially-above';
 			} else if (element_bounding.top < window_top && element_bounding.bottom < window_top) {
 				position_class = 'revealator-above';
 			} else {

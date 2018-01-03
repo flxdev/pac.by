@@ -1,0 +1,108 @@
+extends _layout
+
+block title
+	title Title of template
+
+
+block content
+	main#barba-wrapper
+		section.barba-container(data-namespace="content-page")
+			section.container-wrapper-second-header
+				.block-img(style="background-image:url('img/bg-header/bg-rec.jpg')")
+				.block-second-header.hidden-xs
+					.wrapper-second-header
+						.wrapper-second-header_lang
+							#block-lang.block-dropdown_lang(tabindex="1") Ru
+								ul.dropdown
+									li
+										a(href='#') En
+						.wrapper-second-header_link
+							include includes/_social
+							.block-gos-site
+								#block-gos-site.wrapper-gos-site(tabindex="1")
+									.wrapper-gos-site_title
+										img.gos-site-logo(src='img/gos-site.png')
+										span Государственные сайты
+									ul.dropdown
+										li
+											a(href='#') Президент Республики Беларусь
+										li
+											a(href='#') Совет Министров
+										li
+											a(href='#') Совет Республики Беларусь
+										li
+											a(href='#') Национальное собрание Республики Беларусь
+							.wrapper-second-header_personal-area
+								a.link-personal-area(href='#')
+									span.link-personal-area_icon
+										<svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+										<style type="text/css">.st0{fill:#a5a8b0;}</style>
+										<g>
+										<g id="svg_1">
+										<circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+										<path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+										</g>
+										</g>
+										</svg>
+									span.link-personal-area_link Кабинет абитуриента
+				.block-wrapper-title
+					.block-wrapper-title_title-bread-crumbs
+						h1.title Академия управления при Президенте Республики Беларусь
+						.bread-crumbs
+							a(href='#') Главная
+							span Академия
+				.block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+			section.container-wrapper-content
+				.block-wrapper-content
+					.content-row-wrapper
+						.content-row-wrapper_row-menu
+							.wrapper_row-nav
+								ul
+									li
+										a(href='#').active  История
+									li
+										a(href='#') Научная деятельность
+									li
+										a(href='#') Инновационная площадка
+									li
+										a(href='#') Идеологическая и воспитательная работа
+									li
+										a(href='#') Общественная жизнь
+									li
+										a(href='#') Ректорат
+									li
+										a(href='#') Преподавательский состав
+									li
+										a(href='#') Структура
+									li
+										a(href='#') Достижения Академии
+						.content-row-wrapper_row-txt
+							.wrapper_row-txt
+								.accordion-wrapper.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Руководство
+												._arrow-wrapper
+													._arrow
+										._overlay
+										._hidden-wrapper.js-acc-hidden
+											._hidden
+												.inner-accordion-wrapper
+													.inner-accordion.js-inner-accordion
+														._trigger-wrapper.js-inner-acc-trigger
+															._trigger
+																a(href='#')._title Факультет подготовки и переподготовки
+																._arrow-wrapper
+																	._arrow
+														._hidden-wrapper.js-inner-acc-hidden
+															._hidden
+																._hrefs
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
+																	a._href(href='#') Кафедра государственного строительства и управления
