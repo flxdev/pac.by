@@ -768,6 +768,13 @@
       width: 100%;
     }
   }
+  .accordion{
+    &-wrapper{
+      &.accordion-w3{
+        width: 48%;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 1024px){
@@ -898,6 +905,14 @@
   }
   .map-site-content_list-item{
     width: 50%;
+  }
+
+  .accordion{
+    &-wrapper{
+      &.accordion-w3{
+        width: 48%;
+      }
+    }
   }
 }
 
@@ -2661,6 +2676,13 @@
   .wrapper_row-nav{
     padding-bottom: 15px;
   }
+  .accordion{
+    &-wrapper{
+      &.accordion-w3{
+        width: 32%;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 767px){
@@ -2810,6 +2832,17 @@
       width: 47px;
     }
 
+  }
+
+  .accordion{
+    &-wrapper{
+      &.accordion-w3{
+        width: 100%;
+      }
+    }
+  }
+  .accordion-block-decoration{
+    width: 60%;
   }
 }
 

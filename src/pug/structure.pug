@@ -1,0 +1,544 @@
+extends _layout
+
+block title
+	title Структура Академии
+
+
+block content
+	main#barba-wrapper
+		section.barba-container(data-namespace="content-page")
+			section.container-wrapper-second-header
+				.block-img(style="background-image:url('img/bg-header/bg-incoming.jpg')")
+				.block-second-header.hidden-xs
+					.wrapper-second-header
+						.wrapper-second-header_lang
+							#block-lang.block-dropdown_lang(tabindex="1") Ru
+								ul.dropdown
+									li
+										a(href='#') En
+						.wrapper-second-header_link
+							include includes/_social
+							.block-gos-site
+								#block-gos-site.wrapper-gos-site(tabindex="1")
+									.wrapper-gos-site_title
+										img.gos-site-logo(src='img/gos-site.png')
+										span Государственные сайты
+									ul.dropdown
+										li
+											a(href='#') Президент Республики Беларусь
+										li
+											a(href='#') Совет Министров
+										li
+											a(href='#') Совет Республики Беларусь
+										li
+											a(href='#') Национальное собрание Республики Беларусь
+							.wrapper-second-header_personal-area
+								a.link-personal-area(href='#')
+									span.link-personal-area_icon
+										<svg width="11.1" height="14.2" xmlns="http://www.w3.org/2000/svg">
+										<style type="text/css">.st0{fill:#a5a8b0;}</style>
+										<g>
+										<g id="svg_1">
+										<circle id="svg_2" r="3.5" cy="3.5" cx="5.6" class="st0"/>
+										<path id="svg_3" d="m7.7,8.1c-0.6,0.3 -1.4,0.5 -2.1,0.5s-1.5,-0.2 -2.2,-0.5c-2,1 -3.4,3.3 -3.4,6.1c2,0 9.1,0 11.1,0c0,-2.8 -1.4,-5.1 -3.4,-6.1z" class="st0"/>
+										</g>
+										</g>
+										</svg>
+									span.link-personal-area_link Кабинет абитуриента
+				.block-wrapper-title
+					.block-wrapper-title_title-bread-crumbs
+						h1.title Структура Академии
+						.bread-crumbs
+							a(href='#') Главная
+							a(href='#') Поступающим
+							span Структура
+				.block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+			section.container-wrapper-content
+				.block-wrapper-content
+					.content-row-wrapper
+						.content-row-wrapper_row-menu
+							.wrapper_row-nav
+								ul
+									li
+										a(href='#') Абитуриенту
+									li
+										a(href='#') Магистранту
+									li
+										a(href='#') Слушателю
+									li
+										a(href='#') Аспиранту
+									li
+										a(href='#') Повышение квалификации
+
+							.sticky-print
+								.wrapper_row-social-print.hidden-xs
+									.wrapper_row-data 28 апреля 2017
+									.wrapper_row-print
+
+										.wrapper_row-social
+											<div class="ya-share2" data-services="vkontakte,gplus,facebook"></div>
+
+										a(href='#').btn-print
+											span.icon-print
+												<svg width="20" height="20.5" xmlns="http://www.w3.org/2000/svg">
+												<style type="text/css">.st0{fill:#999999;}</style>
+												<g>
+												<g id="svg_1">
+												<path id="svg_2" d="m18,5.5l-1.5,0l0,-5.5l-13,0l0,5.5l-1.5,0c-1.1,0 -2,0.9 -2,2l0,7.2c0,1.1 0.9,2 2,2l1.5,0l0,4l13,0l0,-0.7l0,-3.5l1.5,0c1.1,0 2,-0.9 2,-2l0,-7.1c0,-1.1 -0.9,-1.9 -2,-1.9zm-13.5,-4.5l11,0l0,4.5l-11,0l0,-4.5zm0,18.5l0,-6.9l11,0l0,6.9l-11,0zm14.5,-4.9c0,0.5 -0.4,1 -1,1l-1.5,0l0,-4l-13,0l0,4l-1.5,0c-0.5,0 -1,-0.4 -1,-1l0,-7.2c0,-0.5 0.4,-1 1,-1l1.5,0l13,0l1.5,0c0.5,0 1,0.4 1,1l0,7.2z" class="st0"/>
+												<circle id="svg_3" r="0.7" cy="8.7" cx="16.8" class="st0"/>
+												<rect id="svg_4" height="1" width="6.9" class="st0" y="15.6" x="5.6"/>
+												<rect id="svg_5" height="1" width="8.8" class="st0" y="13.6" x="5.6"/>
+												<rect id="svg_6" height="1" width="8.8" class="st0" y="17.6" x="5.6"/>
+												</g>
+												</g>
+												</svg>
+											span.txt Версия для печати
+
+						.content-row-wrapper_row-txt(data-anchor="#incoming")
+							.structure-items
+								.accordion-wrapper.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Руководство
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													._hrefs
+														a._href(href='#') Ректорат Академии управления
+														a._href(href='#') Совет Академии управления
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg-1.png');") 
+								hr.structure-items__devider
+								.accordion-wrapper.accordion-w3.acc-institute.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Институт государственной службы
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+									.accordion-block-link
+										a(href="#") Факультет подготовки и переподготовки
+										a(href="") Факультет повышения квалификации
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');") 
+								.accordion-wrapper.accordion-w3.acc-institute.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Институт управленческих кадров
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+									.accordion-block-link
+										a(href="#") Факультет управления
+										a(href="") Факультет подготовки и переподготовки
+										a(href="") Смотреть все
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');") 
+								.accordion-wrapper.accordion-w3.acc-institute.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Научно-исследовательский институт теории и практики государственного дела
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');")     
+								hr.structure-items__devider
+								.accordion-wrapper.accordion-w3.acc-management.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Институт государственной службы
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Управление кадров и правовой работы
+																	a(href='#')._title Учетно-финансовое управление
+																	a(href='#')._title Учебно-методическое управление
+																	a(href='#')._title Управление идеологической и воспитательной работы
+									.accordion-block-link
+										a(href="#") Факультет подготовки и переподготовки
+										a(href="") Факультет повышения квалификации
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');") 
+								.accordion-wrapper.accordion-w3.acc-management.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Институт управленческих кадров
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+									.accordion-block-link
+										a(href="#") Факультет управления
+										a(href="") Факультет подготовки и переподготовки
+										a(href="") Смотреть все
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');") 
+								.accordion-wrapper.accordion-w3.acc-management.js-accordion
+									.accordion
+										._trigger-wrapper.js-acc-trigger
+											._trigger
+												a(href="#")._title Научно-исследовательский институт теории и практики государственного дела
+												._arrow-wrapper
+													._arrow
+														<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+															<g id="svg_1">
+																<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+															</g>
+														</svg>
+										._overlay
+											._hidden-wrapper.js-acc-hidden
+												._hidden
+													.inner-accordion-wrapper
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+														.inner-accordion.js-inner-accordion
+															._trigger-wrapper.js-inner-acc-trigger
+																._trigger
+																	a(href='#')._title Факультет подготовки и переподготовки
+																	._arrow-wrapper
+																		._arrow
+																			<svg width="6.8" height="12.1" xmlns="http://www.w3.org/2000/svg" stroke="currentcolor">
+																				<g id="svg_1">
+																					<polygon id="svg_2" points="0,0.7 5.4,6.1 0,11.4 0.7,12.1 6.8,6.1 0.7,0 0,0.7  " class="st0" />
+																				</g>
+																			</svg>
+															._hidden-wrapper.js-inner-acc-hidden
+																._hidden
+																	._hrefs
+																		ul
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+																			li
+																				a._href(href='#') Кафедра государственного строительства и управления
+									.accordion-block-decoration(style="background-image: url('img/srtucture-item-bg.png');")     
+
+
+
+								.wrapper_row-hotline.revealator-zoomin.revealator-once
+									.wrapper_row-hotline-icon-tel
+										img(src='img/icon-telefon.png' alt='')
+									.wrapper_row-hotline_title Телефон «горячей линии» приемной комисии:
+									.wrapper_row-hotline_tel +375 (17) 229-50-66
+								.title-two новости <br> для поступающих
+								.wrapper-read-also_news-content.width-100.revealator-zoomin.revealator-once
+									.wrapper-read-also_news-block
+										.wrapper-read-also_news
+											a(href='#').wrapper-read-also_news-img
+												img(src='img/news/news-s-1.png' alt='')
+											.wrapper-read-also_news-txt
+												a(href='#').wrapper-read-also_news-txt_link Представители Академии управления примут участие в финале международной олимпиады в сфере информационных технологий «IT-Планета 2016/17»
+												.wrapper-read-also_news-txt_date 18 апреля 2017
+										.wrapper-read-also_news
+											a(href='#').wrapper-read-also_news-img
+												img(src='img/news/news-s-2.png' alt='')
+											.wrapper-read-also_news-txt
+												a(href='#').wrapper-read-also_news-txt_link Приглашаем стать студентом Академии управления на один день
+												.wrapper-read-also_news-txt_date 18 апреля 2017
+										.wrapper-read-also_news
+											a(href='#').wrapper-read-also_news-img
+												img(src='img/news/news-s-4.png' alt='')
+											.wrapper-read-also_news-txt
+												a(href='#').wrapper-read-also_news-txt_link Круглый стол на тему «Совершенствование работы по формированию резерва кадров»
+												.wrapper-read-also_news-txt_date 18 апреля 2017
+										.wrapper-read-also_news
+											a(href='#').wrapper-read-also_news-img
+												img(src='img/news/news-s-3.png' alt='')
+											.wrapper-read-also_news-txt
+												a(href='#').wrapper-read-also_news-txt_link Академия управления на «ТИБО-2017»
+												.wrapper-read-also_news-txt_date 18 апреля 2017
+									a(href='#').link-news Все новости и события
+			section.container-wrapper-content.grey
+				a(href='#').box-big-link
+					.block-wrapper-content
+						.wrapper-look-further.revealator-zoomin.revealator-once
+							.wrapper-look-further_txt Смотрите далее:
+							.wrapper-look-further_link абитуриенту академии управления
+			section.container-wrapper-content
+				.block-wrapper-content
+					.wrapper-interview-s-n.revealator-zoomin.revealator-once
+						form.wrapper-interview
+							.wrapper-interview_title Опросы
+							.wrapper-interview_q Чем привлекло Вас обучение в Академии <br> управления?
+							.wrapper-interview_block-check
+								.block-check
+									.block-check-inline
+										input(type='radio' name='search' id ='radio-interview-s-n-1')
+										label(for='radio-interview-s-n-1') Высокий статус вуза
+										.block-bg-input
+								.block-check
+									.block-check-inline
+										input(type='radio' name='search' id ='radio-interview-s-n-2')
+										label(for ='radio-interview-s-n-2') Качество образования
+										.block-bg-input
+								.block-check
+									.block-check-inline
+										input(type='radio' name='search' id ='radio-interview-s-n-3')
+										label(for ='radio-interview-s-n-3') Качество образования
+										.block-bg-input
+								.block-check
+									.block-check-inline
+										input(type='radio' name='search' id ='radio-interview-s-n-4')
+										label(for ='radio-interview-s-n-4') Отзывы выпускников
+										.block-bg-input
+							.wrapper-interview_btn
+								button Ответить
+							.wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+						.wrapper-s-n
+							.wrapper-interview_title Академия управления <br> в социальных сетях
+							.wrapper-s-n_tab
+								ul.tabs-s
+									li.tab-link(data-tabs="tabs-1") facebook
+									li.tab-link.current-s(data-tabs="tabs-2") вконтакте
+									li.tab-link(data-tabs="tabs-3") instagram
+								#tabs-1.tab-content-s
+									.wrapper-tab-content
+										img(src='img/img-soc-plug.png' alt='')
+								#tabs-2.tab-content-s.current-s
+									.wrapper-tab-content
+										img(src='img/img-soc-plug.png' alt='')
+								#tabs-3.tab-content-s
+									.wrapper-tab-content
+										img(src='img/img-soc-plug.png' alt='')
+					.wrapper-banners.revealator-zoomin.revealator-once
+						ul
+							li
+								a(href='#')
+									img(src='img/baner/baner-1.png' alt='')
+							li
+								a(href='#')
+									img(src='img/baner/baner-2.png' alt='')
+							li
+								a(href='#')
+									img(src='img/baner/baner-3.png' alt='')
+							li
+								a(href='#')
+									img(src='img/baner/baner-4.png' alt='')
+

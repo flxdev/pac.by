@@ -1,9 +1,5 @@
 "use strict";
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 var BrowserDetect = {
@@ -1212,73 +1208,120 @@ if ($(window).width() < 931) {
 	initAnhorHash();
 }
 
-var Accordion = function () {
-	function Accordion(item, trig, hid) {
-		var _this = this;
+function accordionInit(elem) {
+	if ($(elem).length) {
+		var parent = $(elem);
+		parent.each(function () {
+			var _this = $(this),
+				trigger = _this.find('.js-acc-trigger'),
+				hidden = _this.find('.js-acc-hidden');
+			trigger.on('click', function (e) {
+				if (!_this.hasClass('active')) {
+					e.preventDefault();
+					var t_sib = _this.siblings(),
+						sib_trigger = t_sib.find('.js-acc-trigger'),
+						sib_hidden = t_sib.find('.js-acc-hidden'),
+						t_sib_child = $('.js-inner-accordion'),
+						t_sib_child_trigger = _this.find('.js-inner-acc-trigger'),
+						t_sib_child_hidden = _this.find('.js-inner-acc-hidden');
+					if (t_sib.hasClass('active')) {
+						t_sib.removeClass('active');
+						sib_trigger.removeClass('active');
+						sib_hidden.removeClass('active');
+						t_sib_child.removeClass('active');
+						t_sib_child_trigger.removeClass('active');
+						t_sib_child_hidden.removeClass('active');
+						setTimeout(function () {
+							_this.addClass('active');
+							trigger.addClass('active');
+							hidden.addClass('active');
+						}, 400);
+					} else {
+						_this.addClass('active');
+						trigger.addClass('active');
+						hidden.addClass('active');
+					}
+				} else {
+					var t_child = _this.find('.js-inner-accordion'),
+						t_child_trigger = _this.find('.js-inner-acc-trigger'),
+						t_child_hidden = _this.find('.js-inner-acc-hidden');
+					_this.removeClass('active');
+					trigger.removeClass('active');
+					hidden.removeClass('active');
+					setTimeout(function () {
+						t_child.removeClass('active');
+						t_child_trigger.removeClass('active');
+						t_child_hidden.removeClass('active');
+					}, 300);
+				}
+			});
+		});
 
-		_classCallCheck(this, Accordion);
-
-		this.items = {};
-		this.items.item = item;
-		this.items.$item = $(this.items.item);
-		this.items.trigger = trig;
-		this.items.hidden = hid;
-		this.items.settings = {
-			height: 0,
-			currentHeight: 0,
-			active: false
-		};
-		this.items.trigger.on('click', function (e) {
-			return _this.toggleAccordion(e, _this.items);
+		$(document).off('click touchstart').on('click touchstart', function (e) {
+			e.stopPropagation();
+			if (!parent.is(e.target) && parent.has(e.target).length === 0) {
+				parent.each(function () {
+					var _this = $(this),
+						trigger = _this.find('.js-acc-trigger'),
+						hidden = _this.find('.js-acc-hidden'),
+						t_child = _this.find('.js-inner-accordion'),
+						t_child_trigger = _this.find('.js-inner-acc-trigger'),
+						t_child_hidden = _this.find('.js-inner-acc-hidden');
+					_this.removeClass('active');
+					trigger.removeClass('active');
+					hidden.removeClass('active');
+					setTimeout(function () {
+						t_child.removeClass('active');
+						t_child_trigger.removeClass('active');
+						t_child_hidden.removeClass('active');
+					}, 300);
+				});
+			}
 		});
 	}
+}
+accordionInit('.js-accordion');
 
-	_createClass(Accordion, [{
-		key: "toggleAccordion",
-		value: function toggleAccordion(e, items) {
-			if (!items.settings.active) {
-				e.preventDefault();
-				this.showItem(e, items);
-				console.log('show');
-			} else {
-				this.hideItem(e, items);
-				console.log('hide');
-			}
-		}
-	}, {
-		key: "hideItem",
-		value: function hideItem(e, items) {
-			this.removeItemClasses(e, items);
-			items.settings.active = false;
-		}
-	}, {
-		key: "showItem",
-		value: function showItem(e, items) {
-			this.addItemClasses(e, items);
-			items.settings.active = true;
-		}
-	}, {
-		key: "addItemClasses",
-		value: function addItemClasses(e, items) {
-			items.$item.addClass('active');
-			items.trigger.addClass('active');
-			items.hidden.addClass('active');
-		}
-	}, {
-		key: "removeItemClasses",
-		value: function removeItemClasses(e, items) {
-			items.$item.removeClass('active');
-			items.trigger.removeClass('active');
-			items.hidden.removeClass('active');
-		}
-	}]);
-
-	return Accordion;
-}();
+function accordionInnerInit(elem) {
+	if ($(elem).length) {
+		var parent = $(elem);
+		parent.each(function () {
+			var _this = $(this),
+				trigger = _this.find('.js-inner-acc-trigger'),
+				hidden = _this.find('.js-inner-acc-hidden');
+			trigger.on('click', function (e) {
+				e.stopPropagation();
+				if (!_this.hasClass('active')) {
+					e.preventDefault();
+					var t_sib = _this.siblings(),
+						sib_trigger = t_sib.find('.js-inner-acc-trigger'),
+						sib_hidden = t_sib.find('.js-inner-acc-hidden');
+					if (t_sib.hasClass('active')) {
+						t_sib.removeClass('active');
+						sib_trigger.removeClass('active');
+						sib_hidden.removeClass('active');
+						setTimeout(function () {
+							_this.addClass('active');
+							trigger.addClass('active');
+							hidden.addClass('active');
+						}, 400);
+					} else {
+						_this.addClass('active');
+						trigger.addClass('active');
+						hidden.addClass('active');
+					}
+				} else {
+					_this.removeClass('active');
+					trigger.removeClass('active');
+					hidden.removeClass('active');
+				}
+			});
+		});
+	}
+}
+accordionInnerInit('.js-inner-accordion');
 
 // Video width
-
-
 $(document).ready(function () {
 
 	// Resive video
@@ -1294,19 +1337,6 @@ $(document).ready(function () {
 		scaleBannerVideoSize('.video-container .filter');
 		scaleBannerVideoSize('.video-container video');
 	});
-
-	if ($('.js-accordion').length) {
-		var accordionsArr = [];
-		$('.js-accordion').filter(function (key, item) {
-			accordionsArr[key] = new Accordion(item, $(item).find('.js-acc-trigger'), $(item).find('.js-acc-hidden'));
-		});
-	}
-	if ($('.js-inner-accordion').length) {
-		var innerAccordionsArr = [];
-		$('.js-inner-accordion').filter(function (key, item) {
-			innerAccordionsArr[key] = new Accordion(item, $(item).find('.js-inner-acc-trigger'), $(item).find('.js-inner-acc-hidden'));
-		});
-	}
 });
 
 /** Reusable Functions **/
