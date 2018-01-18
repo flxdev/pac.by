@@ -12040,10 +12040,10 @@ p + .wrapper_row-hotline {
 .wrapper-teaching-staff_input {
   display: inline-block;
   vertical-align: top;
-  width: 50%; }
+  width: 40%; }
   .wrapper-teaching-staff_input .box-teaching-staff_input {
     position: relative;
-    width: 70%; }
+    width: 85%; }
     .wrapper-teaching-staff_input .box-teaching-staff_input:hover input {
       border: 1px solid #0a3c90; }
     .wrapper-teaching-staff_input .box-teaching-staff_input input:focus {
@@ -12100,7 +12100,7 @@ p + .wrapper_row-hotline {
 .wrapper-teaching-staff_select {
   display: inline-block;
   vertical-align: top;
-  width: 50%; }
+  width: 60%; }
   .wrapper-teaching-staff_select .wrapper-teaching-staff_select-label {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -12112,7 +12112,7 @@ p + .wrapper_row-hotline {
   .wrapper-teaching-staff_select .wrapper-teaching-staff_select-select {
     position: relative;
     float: right;
-    width: 80%; }
+    width: 60%; }
     .wrapper-teaching-staff_select .wrapper-teaching-staff_select-select .select2-container .select2-selection--single {
       height: 35px;
       padding-top: 3px; }

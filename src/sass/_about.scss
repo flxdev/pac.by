@@ -430,10 +430,10 @@
 
 .wrapper-teaching-staff_input{
   @include display-inline-top;
-  width: 50%;
+  width: 40%;
   .box-teaching-staff_input{
     position: relative;
-    width: 70%;
+    width: 85%;
     &:hover{
       input{
         border: 1px solid #0a3c90;
@@ -476,7 +476,7 @@
 
 .wrapper-teaching-staff_select{
   @include display-inline-top;
-  width: 50%;
+  width: 60%;
   .wrapper-teaching-staff_select-label{
     @include font-sans-300;
     font-size: 13px;
@@ -488,7 +488,7 @@
   .wrapper-teaching-staff_select-select{
     position: relative;
     float: right;
-    width: 80%;
+    width: 60%;
     .select2-container{
       .select2-selection--single {
         height: 35px;
