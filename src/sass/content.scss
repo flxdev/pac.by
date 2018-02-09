@@ -393,6 +393,60 @@
 			color: #141e2d;
 			font-style: italic;
 		}
+
+		.wrapper-interview_loading {
+			display: none;
+			margin-bottom: 25px;
+			.spin {
+				display: block;
+				border-radius: 50%;
+				width: 20px;
+				height: 20px;
+				border-top: 1px solid transparent;
+				border-bottom: 1px solid transparent;
+				border-left: 1px solid #0a3c90;
+				border-right: 1px solid #0a3c90;
+				animation: rotate 1s ease-in-out infinite;
+			}
+			@keyframes rotate {
+				0% {
+					transform: rotate(0deg);
+				}
+				100% {
+					transform: rotate(180deg);
+				}
+			}
+		}
+		.wrapper-interview_success{
+			display: none;
+			p {
+				font-weight: 600;
+			}
+		}
+		.question-form{
+			&.quest-load{
+				.wrapper-interview_success{
+					display: block;
+				}
+				.wrapper-interview_loading{
+					display: block;
+				}
+				.wrapper-interview_change{
+					display: none;
+				}
+			}
+			&.quest-success{
+				.wrapper-interview_success{
+					display: block;
+				}
+				.wrapper-interview_loading{
+					display: none;
+				}
+				.wrapper-interview_change{
+					display: none;
+				}
+			}
+		}
 	}
 	.wrapper-s-n {
 		@include display-inline-top;
@@ -1535,7 +1589,9 @@
 			a {
 				color: #0054e0;
 				display: inline;
-				border-bottom: 2px dashed #acb5d0;
+				text-decoretion: underline;
+				text-underline-position: under;
+				// border-bottom: 2px dashed #acb5d0;
 			}
 		}
 	}
@@ -1603,7 +1659,8 @@
 			a {
 				color: #0054e0;
 				display: inline;
-				border-bottom: 2px dashed #acb5d0;
+				text-decoretion: underline;
+				text-underline-position: under;
 			}
 		}
 	}

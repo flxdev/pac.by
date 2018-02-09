@@ -903,6 +903,7 @@ input[type=radio] {
   .wrapper-swiper{
     font-size: 0;
     width: 100%;
+    display: block;
     .swiper-container-header-news_data{
       @include display-inline-top;
       color: #dcdcdc;

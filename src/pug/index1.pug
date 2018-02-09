@@ -205,33 +205,46 @@ block content
             section.container-wrapper-content.grey
                 .block-wrapper-content
                     .wrapper-interview-s-n.revealator-zoomin.revealator-once
-                        form.wrapper-interview.js-form
+                        .wrapper-interview
                             .wrapper-interview_title Опросы
-                            .wrapper-interview_q Чем привлекло Вас обучение в Академии управления?
-                            .wrapper-interview_block-check.form-group
-                                .block-check
-                                    .block-check-inline
-                                        input(type='radio' name='search' id ='radio-interview-s-n-1' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
-                                        label(for='radio-interview-s-n-1') Высокий статус вуза
-                                        .block-bg-input
-                                .block-check
-                                    .block-check-inline
-                                        input(type='radio' name='search' id ='radio-interview-s-n-2' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
-                                        label(for ='radio-interview-s-n-2') Качество образования
-                                        .block-bg-input
-                                .block-check
-                                    .block-check-inline
-                                        input(type='radio' name='search' id ='radio-interview-s-n-3' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
-                                        label(for ='radio-interview-s-n-3') Качество образования
-                                        .block-bg-input
-                                .block-check
-                                    .block-check-inline
-                                        input(type='radio' name='search' id ='radio-interview-s-n-4' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
-                                        label(for ='radio-interview-s-n-4') Отзывы выпускников
-                                        .block-bg-input
-                            .wrapper-interview_btn
-                                button Ответить
-                            .wrapper-interview_number-people В опросе приняло участие  1 124 человек(а)
+                            form.question-form.js-form
+                                .wrapper-interview_change
+                                    .wrapper-interview_q Чем привлекло Вас обучение в Академии управления?
+                                    .wrapper-interview_block-check.form-group
+                                        .block-check
+                                            .block-check-inline
+                                                input(type='radio' name='search' id ='radio-interview-s-n-1' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                                label(for='radio-interview-s-n-1') Высокий статус вуза
+                                                .block-bg-input
+                                        .block-check
+                                            .block-check-inline
+                                                input(type='radio' name='search' id ='radio-interview-s-n-2' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                                label(for ='radio-interview-s-n-2') Качество образования
+                                                .block-bg-input
+                                        .block-check
+                                            .block-check-inline
+                                                input(type='radio' name='search' id ='radio-interview-s-n-3' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                                label(for ='radio-interview-s-n-3') Качество образования
+                                                .block-bg-input
+                                        .block-check
+                                            .block-check-inline
+                                                input(type='radio' name='search' id ='radio-interview-s-n-4' data-validation="required" data-validation-error-msg="Поле обязательно для заполнения").radio-interview
+                                                label(for ='radio-interview-s-n-4') Отзывы выпускников
+                                                .block-bg-input
+                                    .wrapper-interview_btn
+                                        button Ответить
+                                    .wrapper-interview_number-people В опросе приняло участие
+                                        span.people-count 1 124 
+                                        | человек(а)
+                        
+                                .wrapper-interview_loading
+                                    .spin
+                                .wrapper-interview_success
+                                    p.wrapper-interview_q Ваше мнение принято. Благодарим за участие в опросе!
+                                    .wrapper-interview_number-people В опросе приняло участие
+                                        span.people-count 1 124 
+                                        | человек(а)
+
                         .wrapper-s-n
                             .wrapper-interview_title Академия управления <br> в социальных сетях
                             .wrapper-s-n_tab

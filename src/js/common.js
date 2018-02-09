@@ -216,14 +216,31 @@ function initTabsSoc() {
 }
 
 function initSliderHeaderNews() {
-    $('.swiper-wrapper-news').slick({
-        infinite: false,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        vertical: true,
-        adaptiveHeight: true,
-        dots: true
-    });
+
+    var sliderHeaderNews = $('.swiper-wrapper-news');
+
+    if (sliderHeaderNews.length){
+        sliderHeaderNews.slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            vertical: true,
+            dots: true,
+            useTransform: false
+        });
+
+        var block = $('.block-wrapper-tab');
+
+        var sliderInterval = setInterval(function(){
+            if(block.hasClass('revealator-within')){
+                setTimeout(function(){
+                    $('.swiper-wrapper-news').slick('setPosition');
+                }, 50);
+                clearInterval(sliderInterval);
+            }
+        }, 400);
+    }
+    
 }
 
 function initSliderAnchor() {

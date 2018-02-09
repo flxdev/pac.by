@@ -99,7 +99,7 @@
 .revealator-zoomin.revealator-within,
 .revealator-zoomin.revealator-partially-above,
 .revealator-zoomin.revealator-above {
-  transform: scale(1);
+  transform: none;
   opacity: 1;
 }
 /* Zoom out effect */
@@ -110,7 +110,7 @@
 .revealator-zoomout.revealator-within,
 .revealator-zoomout.revealator-partially-above,
 .revealator-zoomout.revealator-above {
-  transform: scale(1);
+  transform: none;
   opacity: 1;
 }
 /* Rotate left effect */
