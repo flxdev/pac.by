@@ -960,9 +960,18 @@
     }
   }
   .content-row-wrapper_text{
-    table{
+    overflow: hidden;
+    .content-table-wrap{
+      width: 100%;
       overflow-x: scroll;
+      table{
+        width: 767px;
+      }
     }
+    table{
+      overflow-x: scroll; 
+    }
+
   }
 
   .content-row-wrapper_text{

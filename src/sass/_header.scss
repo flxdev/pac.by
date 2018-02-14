@@ -63,6 +63,10 @@
   overflow: hidden;
   background: #000;
 }
+.video-container .poster{
+  display: none;
+}
+
 .video-container .poster img {
   width: 100%;
   bottom: 0;
@@ -1227,13 +1231,19 @@ input[type=radio] {
 .block-wrapper-title_name-ac{
   @include font-sans-500;
   font-size: 13px;
-  color: white;
+  color: #ffffff;
   line-height: 1.7;
   z-index: 5;
   display: block;
   position: absolute;
   left: 200px;
   top: 68px;
+  z-index: 12;  
+  cursor: pointer;
+  transition: color .5s;
+  &:hover{
+    color: #fbe635;
+  }
 }
 
 .upOpen{

@@ -9,10 +9,12 @@ block content
         section.barba-container(data-namespace="home-page")
             section.container-wrapper-second-header
                 .block-video.hidden-xs
-                    .sticky.homepage-hero-module
+                    .sticky.homepage-hero-module.no-video
                         .video-container
                             video#video.fillWidth(autoplay='autoplay' loop="loop" preload='auto' muted="muted")
                                 source(src='video/video1.mp4')
+                            .poster
+                              img(src="img/bg-header/bg1.png", alt="")
                 // todo добавить этот блок. Он заменяет видео на бэкграйнд в ie9
                 .block-ie(style="background-image:url('img/bg-header/bg1.png')")
                 //.block-gradient
@@ -112,7 +114,7 @@ block content
                         include includes/_new-slicky
                     .block-wrapper-title.tab-news
                         include includes/_tab-header
-                .block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
+                a(href="/").block-wrapper-title_name-ac Академия управления <br> при Президенте Республики Беларусь
             section.container-wrapper-content
                 .block-wrapper-content.width-b
                     .wrapper-admission-campaign.revealator-zoomin.revealator-once
