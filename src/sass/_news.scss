@@ -386,6 +386,9 @@
   }
   p{
     margin-bottom: 30px;
+    iframe{
+      width: 100%;
+    }
   }
   p + .content-row-wrapper_text-slider{
     margin-top: 75px;
