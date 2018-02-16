@@ -313,25 +313,31 @@ function initSliderDopCondition() {
 }
 
 function initSliderText() {
-    var swiper = new Swiper('.content-row-wrapper_text-slider', {
-        slidesPerView: "auto",
-        paginationClickable: true,
-        spaceBetween: 30,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        loop: false
-    });
+    var wrapperTextSlider = $('.content-row-wrapper_text-slider');
 
-    $('.content-row-wrapper_text-slider').each(function () {
-        var eachBlock = $(this).length;
-        if(eachBlock === 1){
-            $('.swiper-slide').click(function () {
+    if(wrapperTextSlider.length){
+
+        wrapperTextSlider.each(function () {
+
+            var _t = $(this);
+
+            var _s = new Swiper( _t, {
+                slidesPerView: "auto",
+                paginationClickable: true,
+                spaceBetween: 30,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                loop: false
+            });
+
+            $('.swiper-slide').on('click', function () {
                 if ($(this).hasClass('swiper-slide-next')){
-                    swiper.slideNext()
+                    _s.slideNext();
                 }
             });
-        }
-    });
+
+        });
+    }
 }
 
 function initStickyVideo() {
